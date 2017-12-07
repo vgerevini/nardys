@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="retEstados">
+        <s:complexType />
+      </s:element>
+      <s:element name="retEstadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retEstadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retCidades">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUF" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retCidadesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retCidadesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retBairros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retBairrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retBairrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retLogradouroPorCep">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCep" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retLogradouroPorCepResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retLogradouroPorCepResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retCepsPorLograd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retCepsPorLogradResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retCepsPorLogradResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="retEstadosSoapIn">
+    <wsdl:part name="parameters" element="tns:retEstados" />
+  </wsdl:message>
+  <wsdl:message name="retEstadosSoapOut">
+    <wsdl:part name="parameters" element="tns:retEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesSoapIn">
+    <wsdl:part name="parameters" element="tns:retCidades" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesSoapOut">
+    <wsdl:part name="parameters" element="tns:retCidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosSoapIn">
+    <wsdl:part name="parameters" element="tns:retBairros" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosSoapOut">
+    <wsdl:part name="parameters" element="tns:retBairrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepSoapIn">
+    <wsdl:part name="parameters" element="tns:retLogradouroPorCep" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepSoapOut">
+    <wsdl:part name="parameters" element="tns:retLogradouroPorCepResponse" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradSoapIn">
+    <wsdl:part name="parameters" element="tns:retCepsPorLograd" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradSoapOut">
+    <wsdl:part name="parameters" element="tns:retCepsPorLogradResponse" />
+  </wsdl:message>
+  <wsdl:message name="retEstadosHttpGetIn" />
+  <wsdl:message name="retEstadosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesHttpGetIn">
+    <wsdl:part name="pUF" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosHttpGetIn">
+    <wsdl:part name="pUF" type="s:string" />
+    <wsdl:part name="pCid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepHttpGetIn">
+    <wsdl:part name="pCep" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradHttpGetIn">
+    <wsdl:part name="pUF" type="s:string" />
+    <wsdl:part name="pCid" type="s:string" />
+    <wsdl:part name="pBai" type="s:string" />
+    <wsdl:part name="pLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retEstadosHttpPostIn" />
+  <wsdl:message name="retEstadosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesHttpPostIn">
+    <wsdl:part name="pUF" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retCidadesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosHttpPostIn">
+    <wsdl:part name="pUF" type="s:string" />
+    <wsdl:part name="pCid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retBairrosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepHttpPostIn">
+    <wsdl:part name="pCep" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retLogradouroPorCepHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradHttpPostIn">
+    <wsdl:part name="pUF" type="s:string" />
+    <wsdl:part name="pCid" type="s:string" />
+    <wsdl:part name="pBai" type="s:string" />
+    <wsdl:part name="pLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="retCepsPorLogradHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="retEstados">
+      <wsdl:input message="tns:retEstadosSoapIn" />
+      <wsdl:output message="tns:retEstadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <wsdl:input message="tns:retCidadesSoapIn" />
+      <wsdl:output message="tns:retCidadesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <wsdl:input message="tns:retBairrosSoapIn" />
+      <wsdl:output message="tns:retBairrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <wsdl:input message="tns:retLogradouroPorCepSoapIn" />
+      <wsdl:output message="tns:retLogradouroPorCepSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <wsdl:input message="tns:retCepsPorLogradSoapIn" />
+      <wsdl:output message="tns:retCepsPorLogradSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="retEstados">
+      <wsdl:input message="tns:retEstadosHttpGetIn" />
+      <wsdl:output message="tns:retEstadosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <wsdl:input message="tns:retCidadesHttpGetIn" />
+      <wsdl:output message="tns:retCidadesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <wsdl:input message="tns:retBairrosHttpGetIn" />
+      <wsdl:output message="tns:retBairrosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <wsdl:input message="tns:retLogradouroPorCepHttpGetIn" />
+      <wsdl:output message="tns:retLogradouroPorCepHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <wsdl:input message="tns:retCepsPorLogradHttpGetIn" />
+      <wsdl:output message="tns:retCepsPorLogradHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="retEstados">
+      <wsdl:input message="tns:retEstadosHttpPostIn" />
+      <wsdl:output message="tns:retEstadosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <wsdl:input message="tns:retCidadesHttpPostIn" />
+      <wsdl:output message="tns:retCidadesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <wsdl:input message="tns:retBairrosHttpPostIn" />
+      <wsdl:output message="tns:retBairrosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <wsdl:input message="tns:retLogradouroPorCepHttpPostIn" />
+      <wsdl:output message="tns:retLogradouroPorCepHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <wsdl:input message="tns:retCepsPorLogradHttpPostIn" />
+      <wsdl:output message="tns:retCepsPorLogradHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retEstados">
+      <soap:operation soapAction="http://tempuri.org/retEstados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <soap:operation soapAction="http://tempuri.org/retCidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <soap:operation soapAction="http://tempuri.org/retBairros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <soap:operation soapAction="http://tempuri.org/retLogradouroPorCep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <soap:operation soapAction="http://tempuri.org/retCepsPorLograd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retEstados">
+      <soap12:operation soapAction="http://tempuri.org/retEstados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <soap12:operation soapAction="http://tempuri.org/retCidades" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <soap12:operation soapAction="http://tempuri.org/retBairros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <soap12:operation soapAction="http://tempuri.org/retLogradouroPorCep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <soap12:operation soapAction="http://tempuri.org/retCepsPorLograd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="retEstados">
+      <http:operation location="/retEstados" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <http:operation location="/retCidades" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <http:operation location="/retBairros" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <http:operation location="/retLogradouroPorCep" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <http:operation location="/retCepsPorLograd" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="retEstados">
+      <http:operation location="/retEstados" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCidades">
+      <http:operation location="/retCidades" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retBairros">
+      <http:operation location="/retBairros" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retLogradouroPorCep">
+      <http:operation location="/retLogradouroPorCep" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retCepsPorLograd">
+      <http:operation location="/retCepsPorLograd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://institucional.bradesco.com.br/wsCep/ServicoCep.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://institucional.bradesco.com.br/wsCep/ServicoCep.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://institucional.bradesco.com.br/wsCep/ServicoCep.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://institucional.bradesco.com.br/wsCep/ServicoCep.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

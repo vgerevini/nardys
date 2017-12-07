@@ -1,0 +1,1922 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONTEUDO>
+  <STATUS>
+    <codigo>0</codigo>
+    <nome>EM ANÁLISE</nome>
+    <cancelaprospect>false</cancelaprospect>
+    <email>false</email>
+    <podeaprovar>true</podeaprovar>
+    <conteudoEmail></conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>1</codigo>
+    <nome>IMAGEM APROVADA</nome>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <podeaprovar>false</podeaprovar>
+    <conteudoEmail>
+      <![CDATA[<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>O termo de adesão referente ao prospect <strong>#RAZAOSOCIAL#</strong>,  foi:<br />
+        <strong><font color="#006600">Aprovado</font></strong>,  conforme  critérios estabelecidos, quanto legibilidade, ausência de dados ou dados  incorretos.<br />
+        <br />
+      Data do cadastro: <strong>#DATA#</strong></p>
+      <p>Qualquer duvida estamos a disposição<br />
+        <br />
+<br /> BANCO BRADESCO S.A <br />
+        4160 / Departamento Varejo<br />
+        Bradesco Expresso / PA<br />
+        <strong>
+      Apoio a Negócios e Gestão de Terceiros </strong>
+  <br />  <br />
+    Classificação: CONFIDENCIAL  &quot;Este  documento foi classificado pelo Departamento Bradesco Varejo/Bradesco  Expresso/PA - Área Bradesco Expresso autorizado exclusivamente para os  destinatários contidos nesta mensagem.&quot; </p></font></td>
+  </tr>
+</table>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>2</codigo>
+    <nome>NÚMERO DO CNPJ DIVERGENTE TERMO/SITE</nome>
+    <cancelaprospect>true</cancelaprospect>
+    <email>true</email>
+    <podeaprovar>false</podeaprovar>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">NÚMERO DO CNPJ DIVERGENTE TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>	]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>3</codigo>
+    <nome>IMAGEM ILEGÍVEL</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">IMAGEM ILEGÍVEL</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>	]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>4</codigo>
+    <nome>FALTA DADOS NO TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA DADOS NO TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>5</codigo>
+    <nome>FALTA ASSINATURA NO PROTOCOLO DA AGÊNCIA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA ASSINATURA NO PROTOCOLO DA AGÊNCIA</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>6</codigo>
+    <nome>FALTA ASSINATURA NO PROTOCOLO DO ESTABELECIMENTO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA ASSINATURA NO PROTOCOLO DO ESTABELECIMENTO</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>7</codigo>
+    <nome>CARIMBO DO GERENTE ILEGÍVEL</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">CARIMBO DO GERENTE ILEGÍVEL</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>8</codigo>
+    <nome>CONSULTOR DIFERENTE TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">CONSULTOR DIFERENTE TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>9</codigo>
+    <nome>RAZÃO SOCIAL/FANTASIA DIVERGENTE TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">RAZÃO SOCIAL/FANTASIA DIVERGENTE TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>10</codigo>
+    <nome>DIGITALIZAR IMAGEM CORRETA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">DIGITALIZAR IMAGEM CORRETA</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>11</codigo>
+    <nome>FALTA TESTEMUNHA DO ESTABELECIMENTO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA TESTEMUNHA DO ESTABELECIMENTO</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>12</codigo>
+    <nome>MAIS DE UM CONSULTOR CADASTRADO NO TERMO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">MAIS DE UM CONSULTOR CADASTRADO NO TERMO</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>13</codigo>
+    <nome>NÚMERO DO CNPJ DIVERGENTE TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">NÚMERO DO CNPJ DIVERGENTE TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>14</codigo>
+    <nome>ENDEREÇO INCORRETO TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">ENDEREÇO INCORRETO TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>15</codigo>
+    <nome>TARIFA/SERVIÇO NÃO CADASTRADO NO SITE/TERMO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">TARIFA/SERVIÇO NÃO CADASTRADO NO SITE/TERMO</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>16</codigo>
+    <nome>TERMO ANTIGO FORA DO PADRÃO ATUAL</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">TERMO ANTIGO FORA DO PADRÃO ATUAL</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>17</codigo>
+    <nome>CONSULTOR TESTEMUNHA AÇÃO NÃO PERMITIDA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">CONSULTOR TESTEMUNHA AÇÃO NÃO PERMITIDA</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>18</codigo>
+    <nome>FATURAMENTO DIVERGENTE TERMO SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FATURAMENTO DIVERGENTE TERMO SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>19</codigo>
+    <nome>GERENTE DIVERGENTE TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">GERENTE DIVERGENTE TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>20</codigo>
+    <nome>ASSINATURA DO GERENTE AGENCIA DIVERGENTE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">ASSINATURA DO GERENTE AGENCIA DIVERGENTE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>21</codigo>
+    <nome>ASSINATURA DO REPRESENTANTE ESTAB. DIVERGENTE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">ASSINATURA DO REPRESENTANTE ESTAB. DIVERGENTE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>22</codigo>
+    <nome>ASSINATURA DO GERENTE / ESTABELECIMENTO DIVERGENTE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">ASSINATURA DO GERENTE / ESTABELECIMENTO DIVERGENTE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>23</codigo>
+    <nome>RECEPÇÃO DO CONTRATO/TERMO PELO DEPTO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">RECEPÇÃO DO CONTRATO/TERMO PELO DEPTO</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>24</codigo>
+    <nome>CLIENTE ATUA COMO CORRESPONDENTE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">CLIENTE ATUA COMO CORRESPONDENTE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>25</codigo>
+    <nome>FALTA ASSINATURA DO CONSULTOR</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA ASSINATURA DO CONSULTOR</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>26</codigo>
+    <nome>FALTA DATA NO TERMO/SITE</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">FALTA DATA NO TERMO/SITE</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>27</codigo>
+    <nome>GERENTE TESTEMUNHA AÇÃO NÃO PERMITIDA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">GERENTE TESTEMUNHA AÇÃO NÃO PERMITIDA</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>28</codigo>
+    <nome>PROSPECÇÃO EM PRAÇA NÃO AUTORIZADA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+      <p>Ref:. Processo de contratação Bradesco Expresso
+        <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#RAZAOSOCIAL#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+            #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      <p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+        <br />
+        <strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong><br />
+        <strong><font color="#CC0000">PROSPECÇÃO EM PRAÇA NÃO AUTORIZADA</font></strong><br />
+        <br />
+        Em caso de dúvida favor contatar: <br />
+(11) 3684 – 3550 <br />
+<br />
+BANCO BRADESCO S.A <br />
+4160 / Departamento Varejo<br />
+Bradesco Expresso / PA<br />
+<strong> Apoio a Negócios e Gestão de Terceiros </strong><br />
+      </p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>29</codigo>
+    <nome>AUSÊNCIA TERMO DE ADESÃO/PROPOSTA DE ADESÃO CORRESPONDENTE NO PAÍS</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">AUSÊNCIA TERMO DE ADESÃO/PROPOSTA DE ADESÃO CORRESPONDENTE NO PAÍS</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+
+  <STATUS>
+    <codigo>30</codigo>
+    <nome>TESTEMUNHA NÃO PERTENCE AO ESTABELECIMENTO</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">TESTEMUNHA NÃO PERTENCE AO ESTABELECIMENTO.</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+  <STATUS>
+    <codigo>31</codigo>
+    <nome>FALTA LOGO DA VAN</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">FALTA LOGO DA VAN.</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+
+
+  <STATUS>
+    <codigo>32</codigo>
+    <nome>PROSPECÇÃO RECUSADA</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">PROSPECÇÃO RECUSADA.</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  
+  <STATUS>
+    <codigo>33</codigo>
+    <nome>FALTA NOME DO CONSULTOR</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">FALTA NOME DO CONSULTOR.</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>34</codigo>
+    <nome>AUSÊNCIA TERMO DE ADESÃO/AÇÃO CPFL TDS 01/2016</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">AUSÊNCIA TERMO DE ADESÃO/AÇÃO CPFL TDS 01/2016.</font>
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+<STATUS>
+    <codigo>35</codigo>
+    <nome>AUSÊNCIA TERMO DE ADESÃO Firstdata/HSBC</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">AUSÊNCIA TERMO DE ADESÃO Firstdata/HSBC</font>						
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+  
+  <STATUS>
+    <codigo>36</codigo>
+    <nome>AUSÊNCIA TERMO DE ADESÃO TDS/HSBC</nome>
+    <podeaprovar>true</podeaprovar>
+    <cancelaprospect>false</cancelaprospect>
+    <email>true</email>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+	<table width="800" border="0" cellpadding="1" cellspacing="1">
+		<tr>
+			<td>
+				<img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" />
+			</td>
+		</tr>
+		<tr>
+			<td height="306">
+				<p>Prezado(a) <strong>#NOMEPROSPECT#</strong> ,</p>
+				<p>Ref:. Processo de contratação Bradesco Expresso
+					<br />
+				</p>
+				<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td width="54%" height="33">
+							<strong>Razão Social:</strong>
+							<strong>
+								<br />
+							</strong>#RAZAOSOCIAL#</td>
+						<td width="46%">
+							<strong>CNPJ:<br />
+							</strong>#CNPJ#</td>
+					</tr>
+					<tr>
+						<td height="37">
+							<strong>Cadastrado pela VAN: </strong>
+							<br />
+            #VAN#</td>
+						<td>
+							<strong>Data do cadastro: <br />
+							</strong>#DATA#</td>
+					</tr>
+				</table>
+				<p>Solicitamos regularização do status apontado na avaliação do cadastro no prazo máximo de 30 dias corridos. Se o cadastro não for regularizado no prazo determinado, a prospecção em referência será excluída do site Bradesco Expresso.<br />
+					<br />
+					<strong>
+						<font size="2" face="Verdana, Arial, Helvetica, sans-serif">Motivo da devolução</font>: </strong>
+					<br />
+					<strong>
+						<font color="#CC0000">AUSÊNCIA TERMO DE ADESÃO TDS/HSBC</font>						
+					</strong>
+					<br />
+					<br />
+					Em caso de dúvida favor contatar: <br />
+					(11) 3684 – 3550 <br />
+					<br />
+					BANCO BRADESCO S.A <br />
+					4160 / Departamento Varejo<br />
+					Bradesco Expresso / PA<br />
+					<strong> Apoio a Negócios e Gestão de Terceiros </strong>
+					<br />
+				</p>
+			</td>
+		</tr>
+	</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+</CONTEUDO>

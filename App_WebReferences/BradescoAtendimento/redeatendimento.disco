@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx?wsdl" docRef="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx" xmlns:q1="http://bradesco.com.br/webservices" binding="q1:Rede_x005F_x0020_de_x005F_x0020_AtendimentoSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx" xmlns:q2="http://bradesco.com.br/webservices" binding="q2:Rede_x005F_x0020_de_x005F_x0020_AtendimentoSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

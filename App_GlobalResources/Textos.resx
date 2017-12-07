@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Log_Out" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Login_Mensagem_Erro_Confirmar_Senha" xml:space="preserve">
+    <value>As senhas digitadas são diferentes.</value>
+  </data>
+  <data name="Nenhum_Registro" xml:space="preserve">
+    <value>Nenhum registro encontrado.</value>
+  </data>
+  <data name="Login_Trocar_Senha" xml:space="preserve">
+    <value>Trocar senha</value>
+  </data>
+  <data name="Login_Mensagem_Usuario_e_senha_invalidas" xml:space="preserve">
+    <value>Usuário ou senha inválido.</value>
+  </data>
+  <data name="Mensagem_Aguarde" xml:space="preserve">
+    <value>Aguarde...</value>
+  </data>
+  <data name="Paginacao_Anterior" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="Paginacao_Primeira" xml:space="preserve">
+    <value>Primeira</value>
+  </data>
+  <data name="Paginacao_Proxima" xml:space="preserve">
+    <value>Proxima</value>
+  </data>
+  <data name="Paginacao_Ultima" xml:space="preserve">
+    <value>Ultima</value>
+  </data>
+  <data name="Botao_Novo" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Modulo_Usuario_Ativo" xml:space="preserve">
+    <value>Status Ativo</value>
+  </data>
+  <data name="Modulo_Usuario_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Modulo_Usuario_Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Modulo_Usuario_Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Login_Mensagem_Erro_Template_Email" xml:space="preserve">
+    <value>Não foi possivel encontrar o template para o envio de e-mail.</value>
+  </data>
+  <data name="Login_Mensagem_Email_Enviado_Sucesso" xml:space="preserve">
+    <value>E-mail enviado com sucesso.</value>
+  </data>
+  <data name="Login_Mensagem_Usuario_Nao_Encontrado" xml:space="preserve">
+    <value>Não foi encontrado usuário com o Login ou E-mail informado.</value>
+  </data>
+  <data name="Email_Titulo_Esqueci_Senha" xml:space="preserve">
+    <value>Bradesco Expresso - Esqueci minha senha</value>
+  </data>
+  <data name="Login_Mensagem_Esqueci_Senha_Login_Email" xml:space="preserve">
+    <value>Necessário preencher campo Login ou E-mail</value>
+  </data>
+  <data name="Login_Mensagem_Erro_Sistema" xml:space="preserve">
+    <value>Ocorreu um erro no sitema verifique o Log.</value>
+  </data>
+  <data name="Modulo_Usuario_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Modulo_Usuario_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Modulo_Usuario_Mensagem_Atualizado_Sucesso" xml:space="preserve">
+    <value>Conteúdo atualizado com sucesso.</value>
+  </data>
+  <data name="Modulo_Usuario_Titulo_Cadastro" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="Login_Campo_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Campo_Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Login_Titulo" xml:space="preserve">
+    <value>Nardy's Quadra &amp; Bar</value>
+  </data>
+  <data name="Login_Campo_Esqueci_Senha_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Login_Campo_Esqueci_Senha_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Campo_Titulo_Esqueci_Senha" xml:space="preserve">
+    <value>Digite os dados abaixo para recupera-la</value>
+  </data>
+  <data name="Modulo_Usuario_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Modulo_Usuario_Registro" xml:space="preserve">
+    <value>Registros por página</value>
+  </data>
+  <data name="Modulo_Usuario_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Modulo_Usuario_VAN" xml:space="preserve">
+    <value>VAN</value>
+  </data>
+  <data name="Modulo_Usuario_Titulo_Listagem" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="Modulo_Perfil_Nome" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Modulo_Perfil_Titulo" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Botao_Excluir" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="Modulo_Perfil_Titulo_Listagem" xml:space="preserve">
+    <value>Perfis</value>
+  </data>
+  <data name="Botao_Buscar" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Campos_Obrigatorios" xml:space="preserve">
+    <value>(*) Campo obrigatório.</value>
+  </data>
+  <data name="Modulo_Usuario_DataUltimoAcesso" xml:space="preserve">
+    <value>Data Último Acesso</value>
+  </data>
+  <data name="Modulo_Usuario_Mensagem_Salva_Sucesso" xml:space="preserve">
+    <value>Conteúdo salvo com sucesso.</value>
+  </data>
+  <data name="Login_Campo_Nova_Senha" xml:space="preserve">
+    <value>Nova Senha</value>
+  </data>
+  <data name="Login_Campo_Nova_Senha_Confirma" xml:space="preserve">
+    <value>Confirmação de Senha</value>
+  </data>
+  <data name="Login_Mensagem_Trocar_Senha" xml:space="preserve">
+    <value>Neste primeiro acesso você deve trocar sua senha. A nova senha deve ter de 6 a 8 caracteres, pelo menos duas letras, um número e um caracter especial e diferir da senha recebida em pelo menos três caracteres. Após, digite-a novamente e clique em "Salvar".</value>
+  </data>
+  <data name="Erro_Validar_Senha" xml:space="preserve">
+    <value>A senha deve ter de 6 a 8 caracteres, pelo menos duas letras, um número e um caracter especial e diferir da senha recebida em pelo menos três caracteres.</value>
+  </data>
+  <data name="Modulo_Usuario_Gerar_Senha" xml:space="preserve">
+    <value>Tem certeza que deseja gerar uma nova senha?</value>
+  </data>
+  <data name="Modulo_Usuario_Senha_Alterada" xml:space="preserve">
+    <value>Senha alterada para </value>
+  </data>
+  <data name="Trocar_senha" xml:space="preserve">
+    <value>Trocar Senha</value>
+  </data>
+  <data name="Versao_Aplicaco" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Modulo_Log_Data" xml:space="preserve">
+    <value>Período</value>
+  </data>
+  <data name="Modulo_Log_Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Modulo_Log_Titulo_Listagem" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Mensagem_Atualizado_Sucesso" xml:space="preserve">
+    <value>Conteúdo atualizado com sucesso.</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Mensagem_Salva_Sucesso" xml:space="preserve">
+    <value>Conteúdo salvo com sucesso.</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Titulo_Cadastro" xml:space="preserve">
+    <value>Usuários CheckList</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Titulo_Listagem" xml:space="preserve">
+    <value>Usuários CheckList</value>
+  </data>
+  <data name="Modulo_Usuario_ChecklList_Agencia" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="Modulo_Usuario_CheckList_Mensagem_Campo_Login" xml:space="preserve">
+    <value>Campo Login deve ser numérico.</value>
+  </data>
+  <data name="Modulo_Van_Cnpj" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="Modulo_Van_Codigo_Van" xml:space="preserve">
+    <value>Código da VAN</value>
+  </data>
+  <data name="Modulo_Van_Data" xml:space="preserve">
+    <value>Período do Cadastro</value>
+  </data>
+  <data name="Modulo_Van_Nome_Contato" xml:space="preserve">
+    <value>Contato</value>
+  </data>
+  <data name="Modulo_Van_Nome_Fantasia" xml:space="preserve">
+    <value>Nome Fantasia</value>
+  </data>
+  <data name="Modulo_Van_Razao_Social" xml:space="preserve">
+    <value>Razão Social</value>
+  </data>
+  <data name="Modulo_Van_Titulo_Listagem" xml:space="preserve">
+    <value>VANS</value>
+  </data>
+  <data name="Mensagem_Exclusao_sucesso" xml:space="preserve">
+    <value>Registro(s) excluído(s) com sucesso!</value>
+  </data>
+  <data name="Modulo_Van_Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Modulo_Van_Tipo_Consultor" xml:space="preserve">
+    <value>Consultor</value>
+  </data>
+  <data name="Modulo_Van_Tipo_Multiplicador" xml:space="preserve">
+    <value>Multiplicador</value>
+  </data>
+  <data name="Modulo_Van_Titulo_Cadastro" xml:space="preserve">
+    <value>VANS</value>
+  </data>
+  <data name="Texto_Campo_Obrigatorio" xml:space="preserve">
+    <value>Campo obrigatório</value>
+  </data>
+  <data name="Texto_Selecione" xml:space="preserve">
+    <value>Selecione</value>
+  </data>
+  <data name="Modulo_Reset_Login_Gerar_Senha" xml:space="preserve">
+    <value>Tem certeza que deseja gerar uma nova senha?</value>
+  </data>
+  <data name="Modulo_Reset_Login_Senha_Alterada" xml:space="preserve">
+    <value>Senha alterada para</value>
+  </data>
+  <data name="Modulo_Reset_Senha_Mensagem" xml:space="preserve">
+    <value>Digite o login do usuário Checklist Agência que deseja resetar a senha</value>
+  </data>
+  <data name="Modulo_Reset_Senha_Titulo" xml:space="preserve">
+    <value>Reset de Senha</value>
+  </data>
+  <data name="Texto_Todos" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="Modulo_Reset_Login_Invalido" xml:space="preserve">
+    <value>Login digitado é inválido, por favor tente novamente</value>
+  </data>
+  <data name="Modulo_Van_Tipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Texto_Email_Invalido" xml:space="preserve">
+    <value>Digite um e-mail válido</value>
+  </data>
+  <data name="Mensagem_Erro_FK" xml:space="preserve">
+    <value>Um ou mais registros selecionados possuem informações relacionadas e não podem ser excluídos.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Botao_Enviar_CheckList" xml:space="preserve">
+    <value>Enviar CheckList</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Agencia" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Cabecalho" xml:space="preserve">
+    <value>FORMULÁRIO DE VISITA</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Cod_Funcional" xml:space="preserve">
+    <value>Código funcional</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Data_Visita" xml:space="preserve">
+    <value>Data da Visita</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Gerente" xml:space="preserve">
+    <value>Gerente responsável pela visita</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod1_Perg1" xml:space="preserve">
+    <value>1 - O mobiliário do estabelecimento é semelhante na cor e formato dos que estão utilizados nas Agências do Banco?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod1_Perg2" xml:space="preserve">
+    <value>2 - Possui outra atividade além dos Serviços de Correspondente?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod1_Perg2_1" xml:space="preserve">
+    <value>2.1 - Qual?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod1_Perg3" xml:space="preserve">
+    <value>3 - Na fachada do estabelecimento possui cores e logotipos semelhantes aos utilizados nas Agências do Banco?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod1_Texto" xml:space="preserve">
+    <value>As Resoluções 3.954 e posteriores, do Conselho Monetário Nacional - CMN estabelecem regras para a atividade dos Correspondentes. Dentre outras obrigações, proibiu a utilização, pelo estabelecimento, de configuração arquitetônica, logomarcas, placas, cartazes, cores, mobiliário, etc., similares aos da instituição financeira, ou que possam dificultar a distinção, pelos usuários do serviço, entre um correspondente e uma agência bancária.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg1" xml:space="preserve">
+    <value>1 - Cartaz (Cartazete) obrigatório dos limites operacionais, serviços e horário de atendimento (com os campos preenchidos)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg2" xml:space="preserve">
+    <value>2 - Cartaz de Serviços Bancários (Tabela de Tarifas). Dúvidas consultar Intranet/Dependências/Comercialização de Produtos e Serviços/Tarifas/Bradesco Expresso</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg3" xml:space="preserve">
+    <value>3 - Banner (Pagamento de Contas)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg4" xml:space="preserve">
+    <value>4 - Faixa (Pagamento de Contas)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg5" xml:space="preserve">
+    <value>5 - Os materiais expostos estão atualizados e em perfeito estado de conservação?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Perg6" xml:space="preserve">
+    <value>6 - Possui divulgação de produtos e serviços do Banco, diferentes dos que são exigidos pelo Bradesco Expresso? (dúvidas consultar Intranet/Dependências/Bradesco Expresso PA/ Marketing)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod2_Texto" xml:space="preserve">
+    <value>Respostas negativas para as perguntas de 01 a 05 e afirmativa para a pergunta 6 providenciar a regularização imediata.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod3_Perg1" xml:space="preserve">
+    <value>1 - (O)s funcionário(s) do correspondente possui(em) conhecimento quanto ao serviços prestados?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod3_Perg2" xml:space="preserve">
+    <value>2 - Necessita(m) de treinamento?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod3_Perg3" xml:space="preserve">
+    <value>3 - (O)s funcionário(s) do correspondente se nega(m) a prestar servicos do Bradesco Expresso dentro do horário estabelecido no Cartaz (Cartazete)?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod3_Texto" xml:space="preserve">
+    <value>Respostas negativas para as perguntas acima, providenciar reorientação urgente !!</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod4_Perg1" xml:space="preserve">
+    <value>1 - A movimentação da conta da contratada está centralizada no Bradesco?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod4_Perg2" xml:space="preserve">
+    <value>2 - Foi ofertado o novo *Clube de Vantagens do Bradesco Expresso?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod4_Perg3" xml:space="preserve">
+    <value>3 - Foi ofertada a prestação do serviço do Bradesco Expresso Completo?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod4_Perg4" xml:space="preserve">
+    <value>4 - Foram oferecidos os produtos e serviços do Banco adequados ao perfil da empresa?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod4_Texto" xml:space="preserve">
+    <value>* O Clube de Vantagens é um programa de relacionamento que gera beneficios para o participante, tais como: isenção de tarifas, taxas mais atrativas para empréstimos e aplicações, entre outros. Consultar a Normativa 05.118 - Clube de Vantagens.
+http://bradescoexpresso.com.br/html/clube-de-vantagens.shtm</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Perg1" xml:space="preserve">
+    <value>1 - Possui colaborador Certificado?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Perg1_Informar" xml:space="preserve">
+    <value>Informar o(s) nome(s) e CPF(s) do(s) colaborador(es) Certificado(s)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Perg1_Texto" xml:space="preserve">
+    <value>Em caso negativo, providenciar Certificação urgente, conforme Manual do Processo de Capacitação e Certificação disponível na Intranet/Dependências/Bradesco Expresso/Manuais e Roteiros.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Perg2" xml:space="preserve">
+    <value>2 - Utilizam o crachá com a denominação da empresa contratada, o nome da pessoa e o respectivo número do CPF do funcionário?</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Perg2_Texto" xml:space="preserve">
+    <value>Em caso negativo, providenciar crachá imediato conforme Normativo 05.175 - Crachá Bradesco Expresso.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Texto1" xml:space="preserve">
+    <value>Os itens de análise abaixo se aplicam às Unidades do Bradesco Expresso cujo contrato prevê encaminhamento de pedidos de operação de crédito (Pré-abertura de conta e Empréstimos)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod5_Texto2" xml:space="preserve">
+    <value>Resolução nº 3.954/2011, do Conselho Monetário Nacional, determina que os integrantes da equipe do correspondente no País, que prestam atendimento em operações de crédito, sejam certificados por entidade de capacidade técnica reconhecida. A mesma resolução exige a utilização de crachá.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Perg1" xml:space="preserve">
+    <value>1 - Carimbo para conferência dos documentos originais</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Perg2" xml:space="preserve">
+    <value>2 - Modelo 1.345-5 - Ficha Proposta Abertura de Contas - Pessoa Física</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Perg3" xml:space="preserve">
+    <value>3 - Modelo 4008-151E - Termo de Opção a Cesta de Serviços</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Perg4" xml:space="preserve">
+    <value>4 - Modelo 1.526-1E - Termo de Adesão a Produtos e Serviços</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Perg5" xml:space="preserve">
+    <value>5 - Modelo 1.408-7 - Regulamento para Abertura de Contas de Depósito, Produtos e Serviços - Pessoa Física</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto1" xml:space="preserve">
+    <value>Intranet / Dependências / Bradesco Expresso PA / Manuais / Procedimentos e Modelos / Guia Rápido - Pré-Abertura de Conta Bradesco Expresso - Procedimento Agência de Relacionamento</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto2" xml:space="preserve">
+    <value>Possui os materiais relacionados abaixo:</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto3" xml:space="preserve">
+    <value>Em caso negativo, providenciar material (s) faltante (s) e disponibilizar de imediato ao Correspondente.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto4" xml:space="preserve">
+    <value>Dossiê de pré abertura de contas</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto5" xml:space="preserve">
+    <value>Verificar se o correspondente possui dossiê(s) pendentes(s) de encaminhamento à Agência. Nota: A unidade Bradesco Expresso não deve postergar a remessa de dossiês de contas abertas para a agência, que por sua vez deve encaminhá-los diariamente as Plataformas de Apoio a Negócios Verejo. As contas cujos dossiês não são recepcionados pelas plataformas são bloqueados. Vide Normativo 05.823</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod6_Texto6" xml:space="preserve">
+    <value>Obs. Para análise e validação do Checklist, se faz nescessário o envio de fotos do estabelecimento que esta sendo visitado. Este procedimento está descrito no Manual Apoio Checklist Bradesco Expresso.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod7_Texto1" xml:space="preserve">
+    <value>Para prosseguir com a finalização do cadastro, anexar no mínimo 4 ou no máximo 7 fotos *</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Mod7_Texto2" xml:space="preserve">
+    <value>* Foto fachada da loja / Foto interior da loja / Foto dos produtos da loja expostos / Foto box de caixa / Foto(s) outro(s) ângulos</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo1" xml:space="preserve">
+    <value>MOBÍLIA E FACHADA</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo2" xml:space="preserve">
+    <value>POSSUI OS MATERIAIS EXPOSTOS RELACIONADOS ABAIXO</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo3" xml:space="preserve">
+    <value>ATENDIMENTO BRADESCO EXPRESSO</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo4" xml:space="preserve">
+    <value>PARCERIA COM O BRADESCO EXPRESSO</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo5" xml:space="preserve">
+    <value>CERTIFICAÇÃO E CRACHÁ</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo6" xml:space="preserve">
+    <value>PRÉ ABERTURA DE CONTA</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Modulo7" xml:space="preserve">
+    <value>Upload de Fotos</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Pacb" xml:space="preserve">
+    <value>PACB</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Razao_Social" xml:space="preserve">
+    <value>Razão social do estabelecimento visitado</value>
+  </data>
+  <data name="Modulo_Form_CheckList_Titulo" xml:space="preserve">
+    <value>CheckList Bradesco Expresso</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Erro_Data_Visita" xml:space="preserve">
+    <value>A data da visita não deve ser superior a 15 dias retroativos ou superior a data atual.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Formulario" xml:space="preserve">
+    <value>Formulário</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Lista" xml:space="preserve">
+    <value>Lista de CheckLists (Visitas)</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Lista_Titulo" xml:space="preserve">
+    <value>ÚLTIMOS ENVIADOS</value>
+  </data>
+  <data name="Modulo_Consultor_Selecione_Consultor" xml:space="preserve">
+    <value>Selecione a empresa para visualizar os consultores</value>
+  </data>
+  <data name="Modulo_Consultor_Selecione_Multiplicador" xml:space="preserve">
+    <value>Selecione a empresa para visualizar os multiplicadores</value>
+  </data>
+  <data name="Modulo_Consultor_Titulo_Listagem" xml:space="preserve">
+    <value>Consultores</value>
+  </data>
+  <data name="Modulo_Form_Checklist_CPF" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Erro_Certificados" xml:space="preserve">
+    <value>Verifique os campos Nome e CPF dos certificados.</value>
+  </data>
+  <data name="Modulo_Form_CheckList_Erro_Upload" xml:space="preserve">
+    <value>Por favor, considerar o limite mínimo de imagens para continuar com o cadastro.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Modulo_Consultor_Celular" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="Modulo_Consultor_Cpf" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="Modulo_Consultor_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Modulo_Consultor_Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Modulo_Consultor_Titulo_Cadastro" xml:space="preserve">
+    <value>Consultores</value>
+  </data>
+  <data name="Modulo_Consultor_Estado" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="Modulo_Consultor_Municipio" xml:space="preserve">
+    <value>Município</value>
+  </data>
+  <data name="Modulo_Consultor_Municipios_Relacionados" xml:space="preserve">
+    <value>Municípios Relacionados</value>
+  </data>
+  <data name="Modulo_Consultor_Relacionar_Cidade" xml:space="preserve">
+    <value>Relacionar UF / Município</value>
+  </data>
+  <data name="Modulo_Consultor_Cpf_Invalido" xml:space="preserve">
+    <value>O número do CPF é inválido</value>
+  </data>
+  <data name="Modulo_Consultor_Selecione_Cidade" xml:space="preserve">
+    <value>É necessário relacionar ao menos um município</value>
+  </data>
+  <data name="Modulo_Consultor_Cpf_Existente" xml:space="preserve">
+    <value>O número de CPF nº {0} já está cadastrado, por favor digite outro!</value>
+  </data>
+  <data name="Texto_Confirma_Exclusao" xml:space="preserve">
+    <value>Confirma a exclusão do registro?</value>
+  </data>
+  <data name="Modulo_Form_CheckList_Erro_ChaveLoja" xml:space="preserve">
+    <value>Chave de Loja não encontrada.</value>
+  </data>
+  <data name="Botao_Aprovar" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="Modulo_Aprova_Consultor_Titulo_Cadastro" xml:space="preserve">
+    <value>Aprovação de Consultores</value>
+  </data>
+  <data name="Modulo_Aprova_Consultor_Titulo_Listagem" xml:space="preserve">
+    <value>Aprovação de Consultores</value>
+  </data>
+  <data name="Modulo_Aprova_Mensagem_Aprova_Sucesso" xml:space="preserve">
+    <value>Registro aprovado com sucesso!</value>
+  </data>
+  <data name="Texto_Confirma_Cancelar" xml:space="preserve">
+    <value>Alterações não salvas serão perdidas, você confirma?</value>
+  </data>
+  <data name="Modulo_Usuario_Login_Duplicado" xml:space="preserve">
+    <value>O Login informado já foi cadastrado.</value>
+  </data>
+  <data name="Modulo_Download_CheckList_Nenhum_Formulario" xml:space="preserve">
+    <value>Nenhum formulário para download.</value>
+  </data>
+  <data name="Modulo_Download_CheckList_Titulo" xml:space="preserve">
+    <value>Download CheckList</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cnpj" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="Modulo_Prospeccao_Codigo_Agencia" xml:space="preserve">
+    <value>Código da Agência</value>
+  </data>
+  <data name="Modulo_Prospeccao_Codigo_Van" xml:space="preserve">
+    <value>Código da VAN</value>
+  </data>
+  <data name="Modulo_Prospeccao_Consultor" xml:space="preserve">
+    <value>Consultor</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data" xml:space="preserve">
+    <value>Período do Cadastro</value>
+  </data>
+  <data name="Modulo_Prospeccao_Razao_Social" xml:space="preserve">
+    <value>Razão Social</value>
+  </data>
+  <data name="Modulo_Prospeccao_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Modulo_Prospeccao_Status_Termo_Adesao" xml:space="preserve">
+    <value>Status Termos de Adesão</value>
+  </data>
+  <data name="Modulo_Prospeccao_Titulo_Listagem" xml:space="preserve">
+    <value>Prospecções</value>
+  </data>
+  <data name="Modulo_Prospeccao_Empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Download Imagem CheckList</value>
+  </data>
+  <data name="Modulo_Imagem_CheckList_Titulo" xml:space="preserve">
+    <value>Download Imagem CheckList</value>
+  </data>
+  <data name="Modulo_Prospeccao_Confirma_Upload_Termo" xml:space="preserve">
+    <value>Confirma o termo de adesão carregado?</value>
+  </data>
+  <data name="Modulo_Prospeccao_Upload_Termo_Mensagem_1" xml:space="preserve">
+    <value>Para continuar com o cadastro, você deve fazer o upload do arquivo de imagem contendo o "termo de adesão".</value>
+  </data>
+  <data name="Modulo_Prospeccao_Upload_Termo_Mensagem_2" xml:space="preserve">
+    <value>Esse arquivo será submetido a aprovação posterior e o cadastro poderá ser cancelado em caso de divergências.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Agencia" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="Modulo_Prospeccao_Agencia_Relacionamento" xml:space="preserve">
+    <value>Agência de Relacionamento</value>
+  </data>
+  <data name="Modulo_Prospeccao_Bairro" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cep" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="Modulo_Prospeccao_Complemento" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="Modulo_Prospeccao_Conta_Corrente" xml:space="preserve">
+    <value>Número da conta corrente</value>
+  </data>
+  <data name="Modulo_Prospeccao_Dados_Contato" xml:space="preserve">
+    <value>Dados do Contato</value>
+  </data>
+  <data name="Modulo_Prospeccao_Dados_Empresa" xml:space="preserve">
+    <value>Dados da Empresa</value>
+  </data>
+  <data name="Modulo_Prospeccao_Dados_Prospeccao" xml:space="preserve">
+    <value>Dados da Prospecção</value>
+  </data>
+  <data name="Modulo_Prospeccao_Dados_Protocolo_Agencia" xml:space="preserve">
+    <value>Protocolo da Agência Bradesco</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Fundacao" xml:space="preserve">
+    <value>Data da Fundação</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Visita" xml:space="preserve">
+    <value>Data de Visita</value>
+  </data>
+  <data name="Modulo_Prospeccao_Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Modulo_Prospeccao_Distancia_Agencia" xml:space="preserve">
+    <value>Distância da Ag. Bradesco</value>
+  </data>
+  <data name="Modulo_Prospeccao_Endereco" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="Modulo_Prospeccao_Faturamento" xml:space="preserve">
+    <value>Faturamento Mês</value>
+  </data>
+  <data name="Modulo_Prospeccao_Nome_Fantasia" xml:space="preserve">
+    <value>Nome Fantasia</value>
+  </data>
+  <data name="Modulo_Prospeccao_Nome_Gerente" xml:space="preserve">
+    <value>Nome do gerente</value>
+  </data>
+  <data name="Modulo_Prospeccao_Numero_Filiais" xml:space="preserve">
+    <value>Filiais</value>
+  </data>
+  <data name="Modulo_Prospeccao_Ramo_Atividade" xml:space="preserve">
+    <value>Ramo de Atividade</value>
+  </data>
+  <data name="Modulo_Prospeccao_Responsavel_Loja" xml:space="preserve">
+    <value>Responsável pela Loja</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Arrecadacao" xml:space="preserve">
+    <value>Arrecadação - R$ 0,15</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Cartao" xml:space="preserve">
+    <value>Cartão de Crédito - R$ 5,00</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Cobranca" xml:space="preserve">
+    <value>Cobrança - R$ 0,20</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Conta" xml:space="preserve">
+    <value>Conta Corrente - R$ 8,00</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Deposito" xml:space="preserve">
+    <value>Depósito - R$ 0,20</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Emprestimo" xml:space="preserve">
+    <value>Empréstimos - R$ 8,00</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Extrato" xml:space="preserve">
+    <value>Extrato - R$ 0,30</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Pague_Facil" xml:space="preserve">
+    <value>Pague Fácil - R$ 0,30</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Recarga" xml:space="preserve">
+    <value>Recarga Celular - R$ 0,30</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Saque" xml:space="preserve">
+    <value>Saque - R$ 0,10</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Transferencia" xml:space="preserve">
+    <value>Trans. entre Contas - R$ 0,35</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Tributos" xml:space="preserve">
+    <value>Tributos - R$ 0,15</value>
+  </data>
+  <data name="Modulo_Prospeccao_Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Modulo_Prospeccao_Uf" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="Modulo_Prospeccao_Upload_Arquivo_Nao_Permitido" xml:space="preserve">
+    <value>Arquivo não permitido!</value>
+  </data>
+  <data name="Modulo_Prospeccao_Van" xml:space="preserve">
+    <value>VAN</value>
+  </data>
+  <data name="Texto_Nao" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="Texto_Sim" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="Modulo_Download_Imagem_Salvar_Zip" xml:space="preserve">
+    <value>Salvou Zip: </value>
+  </data>
+  <data name="Modulo_Download_Imagem_Nome_Zip" xml:space="preserve">
+    <value>CheckList Bradesco Expresso</value>
+  </data>
+  <data name="Modulo_Prospeccao_Titulo_Cadastro" xml:space="preserve">
+    <value>Prospecções</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cep_Invalido" xml:space="preserve">
+    <value>CEP inválido. Por favor, preencha o campo e tente novamente.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Endereco_Nao_Encontrado" xml:space="preserve">
+    <value>O CEP digitado não consta em nossa base.Por favor preencha as informações do seu endereço.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifa_Remuneracao" xml:space="preserve">
+    <value>Tarifa de Remuneração</value>
+  </data>
+  <data name="Modulo_Prospeccao_Termo_Adesao" xml:space="preserve">
+    <value>Termo de Adesão</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cnpj_Cadastrado" xml:space="preserve">
+    <value>CNPJ já cadastrado.</value>
+  </data>
+  <data name="Modulo_Download_Imagem_Registros" xml:space="preserve">
+    <value>Registros por página</value>
+  </data>
+  <data name="Modulo_Download_Imagem_Titulo" xml:space="preserve">
+    <value>Download Imagem CheckList</value>
+  </data>
+  <data name="Modulo_Prospeccao_Agencia_Conta_Corrente_Invalida" xml:space="preserve">
+    <value>Número da conta corrente inválido.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Agencia_Invalida" xml:space="preserve">
+    <value>Agência inválida.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Agencia_Relacionamento_Invalida" xml:space="preserve">
+    <value>Agência de Relacionamento inválida.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cnpj_Invalido" xml:space="preserve">
+    <value>CNPJ inválido.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Correntista" xml:space="preserve">
+    <value>Correntista</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Evento" xml:space="preserve">
+    <value>Data Evento</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Evento_Invalida" xml:space="preserve">
+    <value>Data do evento inválida, por favor selecione um Status.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Fundacao_Invalida" xml:space="preserve">
+    <value>Data da fundação inválida, por favor digite novamente.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Visita_Invalida" xml:space="preserve">
+    <value>Data da visita inválida, por favor digite novamente.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Seleciona_Consultor" xml:space="preserve">
+    <value>Consultor não selecionado!</value>
+  </data>
+  <data name="Modulo_Prospeccao_Seleciona_Municipio" xml:space="preserve">
+    <value>Municipio selecionado não pertence a esse consultor.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifas_menor_3" xml:space="preserve">
+    <value>Favor verificar tarifa de remuneração no termo de adesão.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Tarifas_menor_6" xml:space="preserve">
+    <value>É necessário marcar ao menos 6 itens no campo tarifa de remuneração.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Titulo_Email_Prospeccao" xml:space="preserve">
+    <value>Avaliar Termo de Adesão Prospecção</value>
+  </data>
+  <data name="Modulo_Prospeccao_Upload_Arquivo_Selecione" xml:space="preserve">
+    <value>Selecione o arquivo de Termo de Adesão.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Telefone_Invalido" xml:space="preserve">
+    <value>Número de Telefone inválido.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Email_Gerente" xml:space="preserve">
+    <value>E-mail enviado para o gerente da agência {0}</value>
+  </data>
+  <data name="Modulo_Prospeccao_Listagem_Titulo" xml:space="preserve">
+    <value>Detalhe do Prospect</value>
+  </data>
+  <data name="Modulo_Prospeccao_Status_Aprovacao" xml:space="preserve">
+    <value>Status de Aprovação</value>
+  </data>
+  <data name="Modulo_Prospeccao_Data_Cadastro" xml:space="preserve">
+    <value>Data Cadastro</value>
+  </data>
+  <data name="Modulo_Prospeccao_Alteracao_Status_Mensagem_Inalterado" xml:space="preserve">
+    <value>É necessário alterar o status para salvar</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cadastro_Ocorrencia" xml:space="preserve">
+    <value>Digite a ocorrência</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cadastro_Ocorrencia_Titulo" xml:space="preserve">
+    <value>Cadastrar nova ocorrência</value>
+  </data>
+  <data name="Modulo_Prospeccao_Alterar_Email_Enviado" xml:space="preserve">
+    <value>&lt;br&gt;E-mail enviado para o responsável</value>
+  </data>
+  <data name="Modulo_Prospeccao_Alterar_Status_Termo" xml:space="preserve">
+    <value>Altere o status do termo de adesão para salvá-lo.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Termo_Aprovado" xml:space="preserve">
+    <value>Termo de adesão aprovado.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Termo_Excluido" xml:space="preserve">
+    <value>Termo de adesão excluído.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Termo_Revisado" xml:space="preserve">
+    <value>Termo de adesão a ser revisado pela VAN.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Email_Gerente_Reenvio" xml:space="preserve">
+    <value>E-mail reenviado para o gerente da agência {0}</value>
+  </data>
+  <data name="Modulo_Prospeccao_Email_Gerente_Reenvio_Confirm" xml:space="preserve">
+    <value>Deseja reenviar o e-mail para a agência?</value>
+  </data>
+  <data name="Modulo_Prospeccao_Email_Gerente_Reenvio_Mensagem_Erro" xml:space="preserve">
+    <value>Ocorreu um erro ao enviar e-mail.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Email_Gerente_Reenvio_Mensagem_Sucesso" xml:space="preserve">
+    <value>E-mail reenviado com sucesso para {0}.gerencia@bradesco.com.br</value>
+  </data>
+  <data name="Modulo_Prospeccao_Reenviar_Email" xml:space="preserve">
+    <value>Reenviar e-mail de prospecção</value>
+  </data>
+  <data name="Modulo_PACB_Erro" xml:space="preserve">
+    <value>Registro(s) foram gravados, porém houve um erro e o processamento não pode prosseguir: &lt;br&gt;</value>
+  </data>
+  <data name="Modulo_PACB_Mensagem1" xml:space="preserve">
+    <value>Para realizar o cadastro é preciso fazer o upload de um arquivo csv &lt;a href="../../uploads/arquivos/Exemplo.csv" target="_blank"&gt;nesse formato&lt;/a&gt;.</value>
+  </data>
+  <data name="Modulo_PACB_Mensagem2" xml:space="preserve">
+    <value>Após o carregamento o sistema valida o arquivo e faz os ajustes necessários.</value>
+  </data>
+  <data name="Modulo_PACB_Mensagem3" xml:space="preserve">
+    <value>Se o código no arquivo for igual ao código existente na base de dados, o sistema irá considerar os dados do arquivo.</value>
+  </data>
+  <data name="Modulo_PACB_Sucesso" xml:space="preserve">
+    <value>Cadastro do(s) PACB(s) realizado com sucesso! Total:</value>
+  </data>
+  <data name="Modulo_PACB_Titulo" xml:space="preserve">
+    <value>Cadastro de PACB</value>
+  </data>
+  <data name="Modulo_AcoesDia_Botao_Finalizar_Cadastro" xml:space="preserve">
+    <value>Finalizar Cadastro</value>
+  </data>
+  <data name="Modulo_AcoesDia_Cnpj" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="Modulo_AcoesDia_Link_Ver_Prospects" xml:space="preserve">
+    <value>&gt; Ver a lista completa de prospects</value>
+  </data>
+  <data name="Modulo_AcoesDia_NomeFantasia" xml:space="preserve">
+    <value>Nome Fantasia</value>
+  </data>
+  <data name="Modulo_AcoesDia_RazaoSocial" xml:space="preserve">
+    <value>Razão Social</value>
+  </data>
+  <data name="Modulo_AcoesDia_Titulo" xml:space="preserve">
+    <value>Ações do Dia</value>
+  </data>
+  <data name="Modulo_AcoesDia_Titulo_Cadastro_Prospect" xml:space="preserve">
+    <value>Iniciar Cadastro de Prospect</value>
+  </data>
+  <data name="Modulo_AcoesDia_Titulo_Status_Alterados" xml:space="preserve">
+    <value>Últimos Status Alterados</value>
+  </data>
+  <data name="Modulo_AcoesDia_Van" xml:space="preserve">
+    <value>VAN</value>
+  </data>
+  <data name="Modulo_Relatorio_Prospect_Titulo" xml:space="preserve">
+    <value>Relatório de Prospects</value>
+  </data>
+  <data name="Botao_Gerar_Relatorio" xml:space="preserve">
+    <value>Gerar Relatório</value>
+  </data>
+  <data name="Modulo_Relatorio_Data" xml:space="preserve">
+    <value>Período</value>
+  </data>
+  <data name="Modulo_Relatorio_Nenhum_Registro" xml:space="preserve">
+    <value>O período informado não possui nenhum registro.</value>
+  </data>
+  <data name="Modulo_Relatorio_Tipo_Exportacao" xml:space="preserve">
+    <value>Gerar arquivo como</value>
+  </data>
+  <data name="Modulo_Relatorio_Data_Final_Invalida" xml:space="preserve">
+    <value>A data final é inválida.</value>
+  </data>
+  <data name="Modulo_Relatorio_Data_Inicio_Invalida" xml:space="preserve">
+    <value>A data inicial é inválida.</value>
+  </data>
+  <data name="Modulo_Relatorio_PreProspeccao_Titulo" xml:space="preserve">
+    <value>Relatório de Pré Prospecção</value>
+  </data>
+  <data name="Modulo_Relatorio_Consultores_Relatorio_Visitas" xml:space="preserve">
+    <value>Relatório de Visitas</value>
+  </data>
+  <data name="Modulo_Relatorio_Consultores_Titulo" xml:space="preserve">
+    <value>Relatório de Consultores</value>
+  </data>
+  <data name="Modulo_Relatorio_Consultores_Van" xml:space="preserve">
+    <value>VAN</value>
+  </data>
+  <data name="Modulo_Relatorio_Ocorrencias_Status_Titulo" xml:space="preserve">
+    <value>Relatório de Ocorrências com Status</value>
+  </data>
+  <data name="Modulo_Relatorio_Ocorrencias_Titulo" xml:space="preserve">
+    <value>Relatório de Ocorrências</value>
+  </data>
+  <data name="Texto_Todas" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="Modulo_Relatorio_ClubeVantagens_Titulo" xml:space="preserve">
+    <value>Relatório de Clube de Vantagens</value>
+  </data>
+  <data name="Modulo_Relatorio_Correspondente_Titulo" xml:space="preserve">
+    <value>Relatório de Correspondentes</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Visita_Estabelecimento" xml:space="preserve">
+    <value>Já existe uma visita para o estabelecimento realizada no dia {0}. Deverá ser aguardado {1} dias para a próxima visita.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Limite_Upload" xml:space="preserve">
+    <value>O arquivo '{0}' ultrapassou o limite de 999kb.</value>
+  </data>
+  <data name="Modulo_Van_Cnpj_Existe" xml:space="preserve">
+    <value>O CNPJ informado já foi cadastrado.</value>
+  </data>
+  <data name="Login_Mensagem_Usuario_Bloqueado" xml:space="preserve">
+    <value>Usuário Bloqueado. Contate o Administrador do Sistema.</value>
+  </data>
+  <data name="Modulo_Reset_Login_Nao_Encontrado" xml:space="preserve">
+    <value>Usuário CheckList não encontrado</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Selecione_Foto" xml:space="preserve">
+    <value>Selecione uma foto para upload!</value>
+  </data>
+  <data name="Texto_Salvar" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Visita_Passada" xml:space="preserve">
+    <value>A data da visita não deve ser superior a 15 dias retroativos</value>
+  </data>
+  <data name="Modulo_Prospeccao_TotalRegistros" xml:space="preserve">
+    <value>Total de prospects: {0:n0}</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Arquivo_Invalido" xml:space="preserve">
+    <value>O arquivo '{0}' possui formato inválido.</value>
+  </data>
+  <data name="Modulo_Aprova_Mensagem_Duplicado" xml:space="preserve">
+    <value>Consultor já existe!</value>
+  </data>
+  <data name="Modulo_Consultor_Cpf_Existente_Aprovacao" xml:space="preserve">
+    <value>O número de CPF nº {0} já está em aprovação, por favor digite outro!</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Visita_Futura" xml:space="preserve">
+    <value>A data de visita não deve ser superior a data atual.</value>
+  </data>
+  <data name="Modulo_Prospeccao_Cidade_Nao_Encontrada" xml:space="preserve">
+    <value>Cidade não encontrada pelo CEP digitado. Favor selecioná-la manualmente.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Codigo_Obrigatorio" xml:space="preserve">
+    <value>Favor preencher o Código funcional.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Data_Visita_Obrigatorio" xml:space="preserve">
+    <value>Favor preencher a Data da Visita.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_Gerente_Obrigatorio" xml:space="preserve">
+    <value>Favor preencher o Gerente  responsável pela visita.</value>
+  </data>
+  <data name="Modulo_Form_Checklist_PACB_Obrigatorio" xml:space="preserve">
+    <value>Favor selecionar o PACB.</value>
+  </data>
+  <data name="Modulo_Cliente_Titulo_Listagem" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Modulo_Cliente_Mensagem_Atualizado_Sucesso" xml:space="preserve">
+    <value>Cliente atualizado com sucesso.</value>
+  </data>
+  <data name="Modulo_Cliente_Mensagem_Salva_Sucesso" xml:space="preserve">
+    <value>Cliente salvo com sucesso.</value>
+  </data>
+  <data name="Modulo_Cliente_Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Modulo_Cliente_Titulo_Cadastro" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Modulo_Categoria_Existente" xml:space="preserve">
+    <value>Categoria já cadastrada.</value>
+  </data>
+  <data name="Modulo_Categoria_Mensagem_Atualizado_Sucesso" xml:space="preserve">
+    <value>Categoria atualizada com sucesso.</value>
+  </data>
+  <data name="Modulo_Categoria_Mensagem_Salva_Sucesso" xml:space="preserve">
+    <value>Categoria salva com sucesso.</value>
+  </data>
+  <data name="Modulo_Categoria_Titulo_Listagem" xml:space="preserve">
+    <value>Categorias de Produtos</value>
+  </data>
+  <data name="Modulo_Cliente_Existente" xml:space="preserve">
+    <value>Cliente já cadastrado.</value>
+  </data>
+  <data name="Modulo_Produto_Categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Modulo_Produto_Existente" xml:space="preserve">
+    <value>Produto já cadastrado.</value>
+  </data>
+  <data name="Modulo_Produto_Titulo_Listagem" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="Modulo_Produto_Valor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+</root>

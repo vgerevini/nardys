@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Manager_MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <title>Nardy's Quadra & Bar</title>
+    <meta name="description" content="Expresso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+	<script src="<%=ResolveUrl("~/JS/html5-min.js")%>"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="<%=ResolveUrl("~/Imagens/nardys.ico")%>">
+    <%--<link rel="stylesheet" href="<%=ResolveUrl("~/Style/main.css")%>">--%>
+    <link rel="stylesheet" href="<%=ResolveUrl("~/CSS/normalize.css")%>">
+    <link rel="stylesheet" href="<%=ResolveUrl("~/CSS/main.css")%>">
+    <link rel="stylesheet" href="<%=ResolveUrl("~/CSS/calendario.css")%>">
+    <script src="<%=ResolveUrl("~/JS/jquery-1.10.2.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/jquery.mask.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/modernizr-2.6.2.min.js")%>"></script>
+
+    <script src="<%=ResolveUrl("~/JS/jquery.maskMoney.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/default.js")%>"></script>
+    <!--[if lt IE 9]>
+		<script src="<%=ResolveUrl("~/JS/html5shiv.js")%>"></script>
+	<![endif]-->
+
+    <script src="<%=ResolveUrl("~/JS/ckeditor/ckeditor.js")%>"></script>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body" runat="server" title="Bem vindo ao Nardy's.">
+    <form id="frmGeral" runat="server">
+        <asp:ScriptManager runat="server" ID="ScriptManager1"></asp:ScriptManager>
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="cphModalAlerta" runat="server">
+            <asp:MultiView runat="server" ID="mtvViews" ActiveViewIndex="0">
+                <asp:View runat="server" ID="viewAlerta_Erro">
+
+                    <div id="divModalErro" class="ModalMsg">
+                        <a href="javascript:void(0)" onclick="closeModal();" class="expresso-fechar-popup" title="Fechar">Fechar (X)</a>
+                        <p>Ocorreu um erro na execução do sistema, detalhes técnico:<asp:Label ID="lblErro" runat="server"></asp:Label></p>
+                    </div>
+
+                </asp:View>
+                <asp:View runat="server" ID="mtvViewsMensagemUsuario">
+
+                    <div id="divModalMensagem" class="ModalMsg">
+                        <h2>Nardy's informa:</h2>
+                        <p><asp:Literal ID="litMensagem" runat="server"></asp:Literal></p>
+                        <a href="javascript:void(0)" onclick="closeModal();" class="expresso-fechar-popup" title="Fechar">Fechar (X)</a>
+                    </div>
+                </asp:View>
+            </asp:MultiView>
+
+            <div id="black_overlay"></div>
+        </asp:ContentPlaceHolder>
+        
+        <div id="divLoading" style="display:none;">
+            <img src="/intranetv2/Imagens/loading.gif" class="loading_circle" alt="loading">
+        </div>
+        
+    </form>
+    <script src="<%=ResolveUrl("~/JS/jqueryAdjr.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/plugins.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/jbdnsc.polyfills.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/jbdnsc.datepicker.js")%>"></script>
+    <script src="<%=ResolveUrl("~/JS/main.js")%>"></script>
+
+
+</body>
+</html>

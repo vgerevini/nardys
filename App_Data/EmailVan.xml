@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONTEUDO>
+  <STATUS>
+    <codigo>1</codigo>
+    <conteudoEmail>
+      <![CDATA[<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><p>Prezado(a) <strong>#VAN#</strong> ,</p>
+      <p>Segue abaixo dos status dos prospects atualizados entre: <strong>#DATA1#</strong> até <strong>#DATA2#</strong><br />
+      </p>
+       </font>
+      <table width="600" border="1" cellspacing="0" cellpadding="0">
+        <tr>        
+          <td width="412" height="22"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Status</strong></font></td>
+          <td width="182" align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Quantidade de Prospects</strong></font></td>
+        </font>  
+        </tr>
+        #CONTEUDO#
+      </table>   
+      <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+      <p>Qualquer duvida estamos a disposição
+        <br />
+<br />
+        BANCO BRADESCO S.A <br />
+        4160 / Departamento Varejo<br />
+        Bradesco Expresso / PA<br />
+        <strong>
+      Apoio a Negócios e Gestão de Terceiros </strong>
+  <br />
+    Classificação: CONFIDENCIAL  &quot;Este  documento foi classificado pelo Departamento Bradesco Varejo/Bradesco  Expresso/PA - Área Bradesco Expresso autorizado exclusivamente para os  destinatários contidos nesta mensagem.&quot; </p>
+    </font></td>
+  </tr>
+</table>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>2</codigo>
+    <conteudoEmail>
+      <![CDATA[<table width="800" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><p>Prezado(a) <strong>#VAN#</strong> ,</p>
+      <p>Segue abaixo seus novos dados de acesso no site Bradesco Expresso<br />
+      </p>
+       </font>
+         <table width="405" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td height="22"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Link:</strong></font></td>
+          <td><a href="http://www.bradescoexpresso.com.br"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">http://www.bradescoexpresso.com.br</font></a></td>
+        </tr>
+        <tr>        
+          <td width="71" height="22"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Login:</strong></font></td>
+          <td width="327"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">#LOGIN#</font></td>
+        </tr>
+        <tr>
+          <td height="22"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Senha:</strong></font></td>
+          <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">#SENHA#</font></td>
+   </tr>
+      </table>  
+      <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+      <p>Qualquer duvida estamos a disposição
+        <br />
+       <br />
+        BANCO BRADESCO S.A <br />
+        4160 / Departamento Varejo<br />
+        Bradesco Expresso / PA<br />
+        <strong>
+      Apoio a Negócios e Gestão de Terceiros </strong>
+  <br />
+    Classificação: CONFIDENCIAL  &quot;Este  documento foi classificado pelo Departamento Bradesco Varejo/Bradesco  Expresso/PA - Área Bradesco Expresso autorizado exclusivamente para os  destinatários contidos nesta mensagem.&quot; </p>
+    </font></td>
+  </tr>
+</table>]]>
+    </conteudoEmail>
+  </STATUS>
+  <STATUS>
+    <codigo>3</codigo>
+    <conteudoEmail>
+      <![CDATA[<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<table width="750" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><img src="https://expresso.bradesco/imagens/email/topo_expresso.jpg" alt="Bradesco Expresso" /></td>
+  </tr>
+  <tr>
+    <td height="306"><p>Prezado(a) <strong>#GERENTE#</strong>,<br />
+      <br />
+      Ref:. Processo de contratação Bradesco Expresso    <br />
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td width="54%" height="33"><strong>Razão Social:</strong> <strong><br />
+          </strong>#PROSPECT#</td>
+          <td width="46%"><strong>CNPJ:<br />
+          </strong>#CNPJ#</td>
+        </tr>
+        <tr>
+          <td height="37"><strong>Cadastrado pela VAN: </strong><br />
+          #VAN#</td>
+          <td><strong>Data do cadastro: <br />
+          </strong>#DATA#</td>
+        </tr>
+      </table>
+      
+      <br />
+      Solicitamos ao Gerente da Agência, Gerente Administrativo ou Gerente PJ:<br />
+      <br />
+      <ol>
+        <li><strong><font color="#FF0000">Informar</font></strong> se tem conhecimento dessa prospecção<br />
+          <br />
+        </li>
+        <li>Em caso positivo, <font color="#FF0000"><strong>confirmar os dados cadastrais</strong></font> contidos na &quot;Proposta de Adesão Correspondente no País&quot;, e também <font color="#FF0000"><strong>confirmar as assinaturas</strong></font> conforme cartão de autógrafos do Banco:<br />
+        
+        <ul><li>do Gerente da Agência, Gerente Administrativo ou Gerente PJ</li>
+          <li>do(s) Representante(s) da empresa<br />
+            <br />
+          </li>
+          </ul>
+        </li>
+        <li>Validar a &quot;Proposta de Adesão Correspondente no País&quot; respondendo esse e-mail <br />
+          <br />
+        </li>
+        <li>Se é <font color="#FF0000"><strong>favorável</strong></font> ou <font color="#FF0000"><strong>desfavorável</strong></font> à contratação do ponto</li>	
+        </ol>
+      
+Em caso de recusa ou de qualquer outro apontamento, necessário comunicar o Segmento Bradesco Expresso / PA respondendo esse e-mail para que as medidas necessárias sejam tomadas.<br />
+<br />
+Atenção:
+
+- A &quot;Proposta de Adesão Correspondente no País&quot; só poderá ser protocolada, ou seja, assinada por funcionário da Agência que tenha cargo de nível gerencial, para que a mesma não seja devolvida.
+- Não validar a “Proposta de Adesão Correspondente no País” caso constate que a mesma foi utilizada apenas como relatório de visita.
+- As assinaturas constantes na “Proposta de Adesão Correspondente no País” devem estar de acordo com o cartão de autógrafos do Banco.
+
+<p>Em caso de dúvida favor contatar:
+        <br />
+        (11) 3684 – 3550        <br />
+<br />
+        BANCO BRADESCO S.A <br />
+        4160 / Departamento Varejo<br />
+        Bradesco Expresso / PA<br />
+        <strong>
+      Apoio a Negócios e Gestão de Terceiros </strong></p></td>
+  </tr>
+</table>
+</font>]]>
+    </conteudoEmail>
+  </STATUS>
+</CONTEUDO>

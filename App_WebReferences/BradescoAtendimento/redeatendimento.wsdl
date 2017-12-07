@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://bradesco.com.br/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://bradesco.com.br/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar pontos de atendimentado do Bradesco</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://bradesco.com.br/webservices">
+      <s:element name="ProcurarAgenciaPorCEP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tipoAgencia" type="tns:AgenciaTipo" />
+            <s:element minOccurs="0" maxOccurs="1" name="cep" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="AgenciaTipo">
+        <s:restriction base="s:string">
+          <s:enumeration value="Todas" />
+          <s:enumeration value="Prime" />
+          <s:enumeration value="Empresas" />
+          <s:enumeration value="Varejo" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ProcurarAgenciaPorCEPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarAgenciaPorCEPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarAgenciaPorCodigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tipoAgencia" type="tns:AgenciaTipo" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarAgenciaPorCodigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarAgenciaPorCodigoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarAgenciaPorLocalizacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tipoAgencia" type="tns:AgenciaTipo" />
+            <s:element minOccurs="1" maxOccurs="1" name="servicoId" type="tns:ServicoTipo" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cidadeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bairroId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="logradouro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ServicoTipo">
+        <s:restriction base="s:string">
+          <s:enumeration value="Todos" />
+          <s:enumeration value="MaquinasParaDeficiente" />
+          <s:enumeration value="DesbloqueioDeChip" />
+          <s:enumeration value="MaquinaBradescoDiaNoite" />
+          <s:enumeration value="ChequeExpresso" />
+          <s:enumeration value="DriveThru" />
+          <s:enumeration value="Nikkei" />
+          <s:enumeration value="Cambio" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ProcurarAgenciaPorLocalizacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarAgenciaPorLocalizacaoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarTodasAgencias">
+        <s:complexType />
+      </s:element>
+      <s:element name="BuscarTodasAgenciasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarTodasAgenciasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarPontoPorLocalizacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PontoTipo" type="tns:PontoTipo" />
+            <s:element minOccurs="1" maxOccurs="1" name="servicoId" type="tns:ServicoTipo" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cidadeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bairroId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="logradouro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="PontoTipo">
+        <s:restriction base="s:string">
+          <s:enumeration value="Agencias" />
+          <s:enumeration value="MaquinasBradescoDiaNoite" />
+          <s:enumeration value="ChequeExpresso" />
+          <s:enumeration value="BradescoExpresso" />
+          <s:enumeration value="DriveThru" />
+          <s:enumeration value="Bancopostal" />
+          <s:enumeration value="EspacoNikkei" />
+          <s:enumeration value="PostosDeCambio" />
+          <s:enumeration value="ExtensoesDeCambio" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ProcurarPontoPorLocalizacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarPontoPorLocalizacaoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarTodosPontos">
+        <s:complexType />
+      </s:element>
+      <s:element name="BuscarTodosPontosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarTodosPontosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarCidadesPorUF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiglaUF" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarCidadesPorUFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarCidadesPorUFResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarBairrosPorCidade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigoCidade" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcurarBairrosPorCidadeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcurarBairrosPorCidadeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcurarAgenciaPorCEPSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorCEP" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarAgenciaPorCEPSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorCEPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarAgenciaPorCodigoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorCodigo" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarAgenciaPorCodigoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarAgenciaPorLocalizacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorLocalizacao" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarAgenciaPorLocalizacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarAgenciaPorLocalizacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTodasAgenciasSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarTodasAgencias" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTodasAgenciasSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarTodasAgenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarPontoPorLocalizacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarPontoPorLocalizacao" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarPontoPorLocalizacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarPontoPorLocalizacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTodosPontosSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarTodosPontos" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTodosPontosSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarTodosPontosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarCidadesPorUFSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarCidadesPorUF" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarCidadesPorUFSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarCidadesPorUFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarBairrosPorCidadeSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcurarBairrosPorCidade" />
+  </wsdl:message>
+  <wsdl:message name="ProcurarBairrosPorCidadeSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcurarBairrosPorCidadeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Rede_x0020_de_x0020_AtendimentoSoap">
+    <wsdl:operation name="ProcurarAgenciaPorCEP">
+      <wsdl:input message="tns:ProcurarAgenciaPorCEPSoapIn" />
+      <wsdl:output message="tns:ProcurarAgenciaPorCEPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorCodigo">
+      <wsdl:input message="tns:ProcurarAgenciaPorCodigoSoapIn" />
+      <wsdl:output message="tns:ProcurarAgenciaPorCodigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorLocalizacao">
+      <wsdl:input message="tns:ProcurarAgenciaPorLocalizacaoSoapIn" />
+      <wsdl:output message="tns:ProcurarAgenciaPorLocalizacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodasAgencias">
+      <wsdl:input message="tns:BuscarTodasAgenciasSoapIn" />
+      <wsdl:output message="tns:BuscarTodasAgenciasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarPontoPorLocalizacao">
+      <wsdl:input message="tns:ProcurarPontoPorLocalizacaoSoapIn" />
+      <wsdl:output message="tns:ProcurarPontoPorLocalizacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodosPontos">
+      <wsdl:input message="tns:BuscarTodosPontosSoapIn" />
+      <wsdl:output message="tns:BuscarTodosPontosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarCidadesPorUF">
+      <wsdl:input message="tns:ProcurarCidadesPorUFSoapIn" />
+      <wsdl:output message="tns:ProcurarCidadesPorUFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarBairrosPorCidade">
+      <wsdl:input message="tns:ProcurarBairrosPorCidadeSoapIn" />
+      <wsdl:output message="tns:ProcurarBairrosPorCidadeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Rede_x0020_de_x0020_AtendimentoSoap" type="tns:Rede_x0020_de_x0020_AtendimentoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcurarAgenciaPorCEP">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorCEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorCodigo">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorCodigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorLocalizacao">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorLocalizacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodasAgencias">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/BuscarTodasAgencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarPontoPorLocalizacao">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarPontoPorLocalizacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodosPontos">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/BuscarTodosPontos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarCidadesPorUF">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarCidadesPorUF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarBairrosPorCidade">
+      <soap:operation soapAction="http://bradesco.com.br/webservices/ProcurarBairrosPorCidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Rede_x0020_de_x0020_AtendimentoSoap12" type="tns:Rede_x0020_de_x0020_AtendimentoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcurarAgenciaPorCEP">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorCEP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorCodigo">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorCodigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarAgenciaPorLocalizacao">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarAgenciaPorLocalizacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodasAgencias">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/BuscarTodasAgencias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarPontoPorLocalizacao">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarPontoPorLocalizacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTodosPontos">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/BuscarTodosPontos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarCidadesPorUF">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarCidadesPorUF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcurarBairrosPorCidade">
+      <soap12:operation soapAction="http://bradesco.com.br/webservices/ProcurarBairrosPorCidade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Rede_x0020_de_x0020_Atendimento">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar pontos de atendimentado do Bradesco</wsdl:documentation>
+    <wsdl:port name="Rede_x0020_de_x0020_AtendimentoSoap" binding="tns:Rede_x0020_de_x0020_AtendimentoSoap">
+      <soap:address location="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Rede_x0020_de_x0020_AtendimentoSoap12" binding="tns:Rede_x0020_de_x0020_AtendimentoSoap12">
+      <soap12:address location="http://atendimento.bradesco.hostsag2.com.br/site/services/redeatendimento.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
