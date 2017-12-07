@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nardys.Intranet", "D:\Sites\Nardys.Intranet\", "{7998A817-408E-4897-896D-51F0BF8DC32A}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nardys.Intranet", "..\Nardys.Intranet\", "{7998A817-408E-4897-896D-51F0BF8DC32A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_55384"
