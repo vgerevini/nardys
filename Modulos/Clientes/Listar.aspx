@@ -55,7 +55,7 @@
         </div>
     </asp:Panel>
 
-    <asp:DataGrid summary="Lista de Clientes" ID="grdDados" runat="server" AutoGenerateColumns="false" CssClass="listagem-Grid" AlternatingRowStyle-CssClass="par" Width="45%" AllowPaging="True"
+    <asp:DataGrid summary="Lista de Clientes" ID="grdDados" runat="server" AutoGenerateColumns="false" CssClass="listagem-Grid" AlternatingRowStyle-CssClass="par" Width="100%" AllowPaging="True"
         PageSize="50" AllowSorting="True" OnSortCommand="grdDados_SortCommand">
         <Columns>
             <asp:TemplateColumn HeaderText="Seleção" HeaderStyle-CssClass="tabelaHeader" ItemStyle-Width="5%" ItemStyle-HorizontalAlign="Center">
