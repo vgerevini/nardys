@@ -14,11 +14,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $(document).keyup(function (e) {
-            if (e.keyCode == 27) { // escape key maps to keycode `27`
-                $(".modal-glob").removeClass('active');
-            }
-        });
+        
     </script>
     <div>
         <asp:Button ID="btnNovaComanda" runat="server" Text="Nova Comanda" CssClass="btnNovaComanda" OnClick="btnNovaComanda_Click" />

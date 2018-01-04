@@ -1,9 +1,11 @@
 ﻿$(document).ready(function () {
-    //teste();
+    _loadModal();
 });
 
-function teste() {    
-    $('.dddd').on('click', function () {
-        $('.modal-new-comanda').fadeIn();
-    })
+function _loadModal() {
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $(".modal-glob").removeClass('active');
+        }
+    });
 }

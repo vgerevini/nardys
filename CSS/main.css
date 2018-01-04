@@ -773,7 +773,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: #CC092F;
+    color: #fff;
+    font-family: cursive!important;
     padding-bottom: .2em;
 }
 
@@ -817,7 +818,7 @@ html {
     min-width: 100vh;
 }
 
-body#login, body#login form {
+/*body#login, body#login form {
     display: inital;
     min-height: 0;
     flex-flow: initial;
@@ -880,7 +881,7 @@ body#login, body#login form {
 
                     body#login .message .login .no-label input:first-child {
                         width: 2em;
-                    }
+                    }*/
 
 #content_pnlEsqueciSenha {
 
@@ -1031,7 +1032,7 @@ nav.menu, main{
 }
 
 
-main{
+main.conteudo{
 
   max-width:calc(100% - 17em);
   margin-left:16em;
@@ -1108,7 +1109,7 @@ nav span {
 
 
 /**LOGIN**/
-body#login {
+/*body#login {
     background: url(../Imagens/bg-login.png) 0px 0px repeat-x #f1f1f1;
     display: initial;
 }
@@ -1180,7 +1181,7 @@ body#login {
 
 #login .login-middle .login-fields span {
     display: block;
-}
+}*/
 
 /** Menu Suspenso **/
 
