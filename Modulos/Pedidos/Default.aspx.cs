@@ -93,8 +93,10 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnNovaComanda_Click(object sender, EventArgs e)
     {
+        pnlNovo.CssClass = " modal-glob active";
         pnlNovo.Visible = true;
         pnlItem.Visible = false;
+        pnlAdicionar.Visible = false;
         pnlFechamento.Visible = false;
     }
 
