@@ -10,110 +10,12 @@ public class DOProduto
 
     #region  Obter
     /// <summary>
-    /// Obter usuário pelo login e senha
+    /// Obter produto pelo ID ou código de barras
     /// </summary>
-    /// <param name="pstrLogin">Login</param>
-    /// <param name="pintCategoriaId">Senha</param>
+    /// <param name="pintId">ID</param>
+    /// <param name="pstrCodigo">Código de Barras</param>
     /// <returns></returns>
-    //public static Produto ObterUsuarioLogin(string nome, int pintCategoriaId)
-    //{
-
-    //    string strConectionString = ConfigurationManager.ConnectionStrings["BradescoExpresso"].ConnectionString;
-    //    SqlConnection objConexao = new SqlConnection(strConectionString);
-
-    //    SqlCommand objComando = new SqlCommand("SPE_L_PRODUTO");
-    //    objComando.Connection = objConexao;
-    //    objComando.CommandType = CommandType.StoredProcedure;
-
-    //    objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.NVarChar, 200).Value = nome;
-    //    objComando.Parameters.Add("@IDCATEGORIA", SqlDbType.Int).Value = pintCategoriaId;
-
-    //    try
-    //    {
-    //        objConexao.Open();
-
-    //        Produto objProduto = new Produto();
-
-    //        IDataReader idrReader = default(IDataReader);
-
-    //        idrReader = objComando.ExecuteReader();
-
-    //        while ((idrReader.Read()))
-    //        {
-    //            objProduto.FromIDataReader(idrReader);
-    //        }
-
-    //        return objProduto;
-
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        throw ex;
-
-    //    }
-    //    finally
-    //    {
-    //        //Fecha a conexao se aberta
-    //        if (objConexao.State != ConnectionState.Closed)
-    //        {
-    //            objConexao.Close();
-    //        }
-    //    }
-    //}
-
-    //public static Usuario ObterUsuarioEmail(string pstrEmail)
-    //{
-
-    //    string strConectionString = ConfigurationManager.ConnectionStrings["BradescoExpresso"].ConnectionString;
-    //    SqlConnection objConexao = new SqlConnection(strConectionString);
-
-    //    SqlCommand objComando = new SqlCommand("SPE_L_USUARIO_EMAIL");
-    //    objComando.Connection = objConexao;
-    //    objComando.CommandType = CommandType.StoredProcedure;
-        
-    //    objComando.Parameters.Add("@EMAIL", SqlDbType.VarChar, 300).Value = pstrEmail;
-
-    //    try
-    //    {
-    //        objConexao.Open();
-
-    //        Usuario objUsuario = new Usuario();
-
-    //        IDataReader idrReader = default(IDataReader);
-
-    //        idrReader = objComando.ExecuteReader();
-
-    //        while ((idrReader.Read()))
-    //        {
-    //            objUsuario.FromIDataReader(idrReader);
-    //        }
-
-    //        return objUsuario;
-
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        throw ex;
-
-    //    }
-    //    finally
-    //    {
-    //        //Fecha a conexao se aberta
-    //        if (objConexao.State != ConnectionState.Closed)
-    //        {
-    //            objConexao.Close();
-    //        }
-    //    }
-
-    //}
-
-    /// <summary>
-    /// Obter usuário pelo id
-    /// </summary>
-    /// <param name="Id">Id Usuario</param>
-    /// <param name="pstrSenha">Senha</param>
-    /// <returns></returns>
-    public static Produto ObterProduto(int Id)
+    public static Produto Obter(string pstrCodigo = null)
     {
 
         string strConectionString = ConfigurationManager.ConnectionStrings["BradescoExpresso"].ConnectionString;
@@ -122,8 +24,9 @@ public class DOProduto
         SqlCommand objComando = new SqlCommand("SPE_L_PRODUTO");
         objComando.Connection = objConexao;
         objComando.CommandType = CommandType.StoredProcedure;
-
-        objComando.Parameters.Add("@IDPRODUTO", SqlDbType.Int).Value = Id;        
+            
+        if (!String.IsNullOrWhiteSpace(pstrCodigo))
+            objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pstrCodigo;
 
         try
         {
@@ -159,12 +62,12 @@ public class DOProduto
 
     }
     #endregion
-      
+
     #region Atualizar
     /// <summary>
-    /// Objeto Usuario
+    /// Atualiza produto
     /// </summary>
-    /// <param name="pobjProduto">Obejto Usuario</param>
+    /// <param name="pobjProduto">Produto</param>
     /// <returns></returns>
     public static int Atualizar(Produto pobjProduto)
     {
@@ -176,10 +79,10 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure
-        objComando.Parameters.Add("@ID", SqlDbType.Int).Value = pobjProduto.Id;
+        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
         objComando.Parameters.Add("@CATEGORIAID", SqlDbType.Int).Value = pobjProduto.IdCategoria;
-        objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar).Value = pobjProduto.Nome;        
-        objComando.Parameters.Add("VALOR", SqlDbType.Decimal).Value = pobjProduto.Valor;    
+        objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar).Value = pobjProduto.Nome;
+        objComando.Parameters.Add("VALOR", SqlDbType.Decimal).Value = pobjProduto.Valor;
 
         try
         {
@@ -208,14 +111,14 @@ public class DOProduto
                 objConexao.Close();
             }
         }
-    }    
+    }
     #endregion
 
     #region Inserir
     /// <summary>
-    /// Objeto Usuario
+    /// Insere novo produto
     /// </summary>
-    /// <param name="pobjUsuario">Obejto Usuario</param>
+    /// <param name="pobjProduto">Produto</param>
     /// <returns></returns>
     public static int Inserir(Produto pobjProduto)
     {
@@ -227,6 +130,7 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure               
+        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
         objComando.Parameters.Add("@CATEGORIAID", SqlDbType.Int).Value = pobjProduto.IdCategoria;
         objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar).Value = pobjProduto.Nome;
         objComando.Parameters.Add("VALOR", SqlDbType.Decimal).Value = pobjProduto.Valor;
@@ -279,7 +183,7 @@ public class DOProduto
 
         ///Parametros
         if (!string.IsNullOrEmpty(pstrNome)) objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar, 200).Value = pstrNome;
-        if (pintCategoriaId > 0) objComando.Parameters.Add("@IDPRODUTO", SqlDbType.Int).Value = pintCategoriaId;
+        if (pintCategoriaId > 0) objComando.Parameters.Add("@IDCATEGORIA", SqlDbType.Int).Value = pintCategoriaId;
 
         try
         {
@@ -298,7 +202,7 @@ public class DOProduto
             {
                 objProduto = new Produto();
                 objProduto.FromIDataReader(idrReader);
-                objListProduto.Add(objProduto);                
+                objListProduto.Add(objProduto);
             }
 
             return objListProduto;
@@ -321,7 +225,7 @@ public class DOProduto
     #endregion
 
     #region Excluir
-    public static void Excluir(int pintId)
+    public static void Excluir(string pstrId)
     {
         string strConectionString = ConfigurationManager.ConnectionStrings["BradescoExpresso"].ConnectionString;
         SqlConnection objConexao = new SqlConnection(strConectionString);
@@ -331,15 +235,15 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure               
-        objComando.Parameters.Add("@ID", SqlDbType.Int).Value = pintId;
+        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pstrId;
 
         try
         {
             //Abre conexão com o banco de dados
             objConexao.Open();
-            
+
             //Executa comando no banco de dados
-            objComando.ExecuteNonQuery();            
+            objComando.ExecuteNonQuery();
 
         }
         catch (Exception ex)

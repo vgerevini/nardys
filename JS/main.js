@@ -10,6 +10,9 @@ function PageLoad() {
 }
 
 $(function () {
+    $(".codigoBarras").keyup(function () {
+        $(this).next().focus();
+    });
 
     $('#ctl00_ctl00_content_contentInterna_btnDuplicar').click(function () {
         return confirm("Deseja duplicar esta pergunta para zerar o contador de acessos?");

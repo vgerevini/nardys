@@ -106,11 +106,11 @@ public partial class Manager_Modulos_Produtos_Listar : System.Web.UI.Page
             #region Campos Sorting
             switch (e.SortExpression)
             {
-                case "Id":
+                case "Codigo":
                     if (AscendingSort)
-                        dados = dados.OrderBy(u => u.Id).ToArray();
+                        dados = dados.OrderBy(u => u.Codigo).ToArray();
                     else
-                        dados = dados.OrderByDescending(u => u.Id).ToArray();
+                        dados = dados.OrderByDescending(u => u.Codigo).ToArray();
                     break;
                 case "Nome":
                     if (AscendingSort)
@@ -257,7 +257,7 @@ public partial class Manager_Modulos_Produtos_Listar : System.Web.UI.Page
                     {
                         try
                         {
-                            DOProduto.Excluir(Convert.ToInt32(item.Cells[1].Text));
+                            DOProduto.Excluir(item.Cells[1].Text);
                         }
                         catch (Exception ex)
                         {

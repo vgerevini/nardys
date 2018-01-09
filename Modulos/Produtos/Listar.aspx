@@ -73,14 +73,14 @@
                 </ItemTemplate>
                 <ItemStyle Width="5%"/>
             </asp:TemplateColumn>
-            <asp:BoundColumn Visible="false" DataField="Id" HeaderText="ID" SortExpression="Id" HeaderStyle-CssClass="tabelaHeader" />
+            <asp:BoundColumn Visible="false" DataField="Codigo" HeaderText="Codigo" SortExpression="Codigo" HeaderStyle-CssClass="tabelaHeader" />
             <asp:BoundColumn DataField="Nome" SortExpression="Nome" HeaderText="Nome" HeaderStyle-CssClass="tabelaHeader asc" ItemStyle-Width="20%" />
             <asp:BoundColumn DataField="NomeCategoria" HeaderText="Categoria" SortExpression="NomeCategoria" HeaderStyle-CssClass="tabelaHeader" ItemStyle-Width="20%" />
             <asp:BoundColumn DataField="Valor" HeaderText="Valor" SortExpression="Valor" HeaderStyle-CssClass="tabelaHeader" ItemStyle-Width="20%" />
 
             <asp:TemplateColumn HeaderText="Editar" HeaderStyle-CssClass="tabelaHeader" ItemStyle-Width="5%" ItemStyle-HorizontalAlign="Center">
                 <ItemTemplate>
-                    <a id="A1" title="Editar" runat="server" href='<%# String.Format("Editar.aspx?Id={0}", Eval("Id"))%>'>
+                    <a id="A1" title="Editar" runat="server" href='<%# String.Format("Editar.aspx?Id={0}", Eval("Codigo"))%>'>
                         <img src="/Style/Images/edit-icon.png" style="width: 1.5em;" /></a>
                 </ItemTemplate>
                 <ItemStyle />

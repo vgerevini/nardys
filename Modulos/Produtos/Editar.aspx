@@ -34,23 +34,30 @@
     <div class="fields">
         <label>
             <span>
+                <asp:Label ID="lblCodigo" runat="server" AssociatedControlID="txtCodigo" title="Categoria"><%=Resources.Produto.Codigo %>*</asp:Label>
+            </span>
+            <asp:TextBox runat="server" ID="txtCodigo" CssClass="frmTxt codigoBarras" MaxLength="200" title="Informe o código de barras" TabIndex="1"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvCodigo" runat="server" ControlToValidate="txtCodigo" Display="Dynamic" title="Campo obrigatório"></asp:RequiredFieldValidator>
+        </label>
+        <label>
+            <span>
                 <asp:Label ID="lblCategoria" runat="server" AssociatedControlID="ddlcategoria" title="Categoria"><%=Resources.Textos.Modulo_Produto_Categoria %>*</asp:Label>
             </span>
-            <asp:DropDownList runat="server" ID="ddlCategoria" title="Selecione a categoria"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlCategoria" title="Selecione a categoria" TabIndex="2"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="rfvCategoria" runat="server" ControlToValidate="ddlCategoria" InitialValue="0" Display="Dynamic" title="Campo obrigatório"></asp:RequiredFieldValidator>
         </label>
         <label>
             <span>
                 <asp:Label ID="lblNome" runat="server" AssociatedControlID="txtNome" title="Nome"><%=Resources.Textos.Modulo_Usuario_Nome %>*</asp:Label>
             </span>
-            <asp:TextBox runat="server" ID="txtNome" CssClass="frmTxt" MaxLength="200" title="Informe o nome"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtNome" CssClass="frmTxt" MaxLength="200" title="Informe o nome" TabIndex="3"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvNome" runat="server" ControlToValidate="txtNome" Display="Dynamic" title="Campo obrigatório"></asp:RequiredFieldValidator>
         </label>
         <label>
             <span>
                 <asp:Label ID="lblValor" runat="server" AssociatedControlID="txtValor" title="Valor"><%=Resources.Textos.Modulo_Produto_Valor %>*</asp:Label>
             </span>
-            <asp:TextBox runat="server" ID="txtValor" CssClass="frmTxt" MaxLength="200" title="Informe o valor"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtValor" CssClass="frmTxt" MaxLength="200" title="Informe o valor" TabIndex="4"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvValor" runat="server" ControlToValidate="txtValor" Display="Dynamic" title="Campo obrigatório"></asp:RequiredFieldValidator>
         </label>
      </div>
@@ -65,8 +72,8 @@
 
     <div class="btn-acoes2">
         <asp:PlaceHolder runat="server" ID="phOptions" Visible="true">
-            <asp:Button runat="server" ID="btnCancelar" CssClass="cancelar" Text="Voltar" OnClick="btnCancelar_Click" CausesValidation="false" title="Cancelar" alt="Cancelar" />
-            <asp:Button runat="server" ID="btnOK" CssClass="submit" Text="Salvar" OnClick="btnOK_Click" title="Salvar" alt="Salcar" />
+            <asp:Button runat="server" ID="btnCancelar" CssClass="cancelar" Text="Voltar" OnClick="btnCancelar_Click" CausesValidation="false" title="Cancelar" alt="Cancelar" TabIndex="6" UseSubmitBehavior="false" />
+            <asp:Button runat="server" ID="btnOK" CssClass="submit" Text="Salvar" OnClick="btnOK_Click" title="Salvar" alt="Salcar" TabIndex="5" />
         </asp:PlaceHolder>
     </div>
 

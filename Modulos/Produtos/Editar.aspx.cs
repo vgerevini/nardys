@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
 {
     #region Variáveis
-    private int codigo;
+    private string codigo;
     private Produto gobjProduto;
     #endregion
 
@@ -23,9 +23,9 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
 
             if (Request.QueryString["Id"] != null)
             {
-                codigo = Convert.ToInt32(Request.QueryString["Id"]);
+                codigo = Request.QueryString["Id"];
 
-                gobjProduto = DOProduto.ObterProduto(codigo);
+                gobjProduto = DOProduto.Obter(codigo);
 
                 CarregarObjetos(Utilitarios.TipoTransacao.Carregar, gobjProduto);
             }
@@ -47,6 +47,7 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
 
     private void IniciaTela()
     {
+        this.txtCodigo.Focus();
         this.ddlCategoria.DataSource = DOCategoria.Listar();
         this.ddlCategoria.DataTextField = "nome";
         this.ddlCategoria.DataValueField = "id";
@@ -54,6 +55,7 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
         this.ddlCategoria.Items.Insert(0, new ListItem(Resources.Textos.Texto_Selecione, "0"));
 
         this.rfvNome.Text = Resources.Textos.Texto_Campo_Obrigatorio;
+        this.rfvCodigo.Text = Resources.Textos.Texto_Campo_Obrigatorio;
         this.rfvCategoria.Text = Resources.Textos.Texto_Campo_Obrigatorio;
         this.rfvValor.Text = Resources.Textos.Texto_Campo_Obrigatorio;
     }
@@ -64,10 +66,11 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
         {
             //Novo Usuario
             case Utilitarios.TipoTransacao.Limpar:
-                codigo = 0;
+                codigo = string.Empty;
 
                 ddlCategoria.SelectedValue = "0";
                 txtNome.Text = string.Empty;
+                txtCodigo.Text = string.Empty;
                 txtValor.Text = string.Empty;
 
                 break;
@@ -79,7 +82,7 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
                     gobjProduto = new Produto();
                 }
 
-                gobjProduto.Id = codigo;
+                gobjProduto.Codigo = txtCodigo.Text;
                 gobjProduto.IdCategoria = Convert.ToInt32(ddlCategoria.SelectedValue);
                 gobjProduto.Nome = txtNome.Text;
                 gobjProduto.Valor = Convert.ToDouble(txtValor.Text);
@@ -87,7 +90,8 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
                 break;
             //Descarregar Dados do Usuario
             case Utilitarios.TipoTransacao.Carregar:
-
+                txtCodigo.Text = objProduto.Codigo;
+                txtCodigo.Enabled = false;
                 ddlCategoria.SelectedValue = objProduto.IdCategoria.ToString();
                 txtNome.Text = objProduto.Nome.ToString();
                 txtValor.Text = objProduto.Valor.ToString();
@@ -101,10 +105,10 @@ public partial class Manager_Modulos_Produtos_Editar : System.Web.UI.Page
     {
         try
         {
-            codigo = Convert.ToInt32(Request.QueryString["Id"]);
+            codigo = Request.QueryString["Id"];
             this.CarregarObjetos(Utilitarios.TipoTransacao.Salvar, gobjProduto);
 
-            if (codigo == 0)
+            if (codigo == string.Empty)
             {
                 DOProduto.Inserir(gobjProduto);
                 Response.Redirect("Listar.aspx?sucesso=1");
