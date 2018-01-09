@@ -63,11 +63,11 @@ public partial class Manager_Modulos_Usuarios_Editar : System.Web.UI.Page
 
     private void IniciaTela()
     {
-        //this.ddlStatus.DataSource = DOStatusUsuario.Listar();
-        //this.ddlStatus.DataTextField = "Status";
-        //this.ddlStatus.DataValueField = "UsuarioStatusId";
-        //this.ddlStatus.DataBind();
-        //this.ddlStatus.Items.Insert(0, new ListItem(Resources.Textos.Texto_Selecione, "0"));
+        this.ddlStatus.DataSource = DOStatusUsuario.Listar();
+        this.ddlStatus.DataTextField = "Status";
+        this.ddlStatus.DataValueField = "UsuarioStatusId";
+        this.ddlStatus.DataBind();
+        this.ddlStatus.Items.Insert(0, new ListItem(Resources.Textos.Texto_Selecione, "0"));
 
         //this.ddlVan.DataSource = DOVan.Listar();
         //this.ddlVan.DataTextField = "NomeFantasia";
@@ -134,7 +134,8 @@ public partial class Manager_Modulos_Usuarios_Editar : System.Web.UI.Page
                     gobjUsuario.Senha = Utilitarios.CriptografiaSeguranca.Rc4(txtSenha.Text);
                 }
 
-                gobjUsuario.IdStatus = Convert.ToInt32(ddlStatus.SelectedValue);
+                if(!string.IsNullOrEmpty(ddlStatus.SelectedValue))
+                    gobjUsuario.IdStatus = Convert.ToInt32(ddlStatus.SelectedValue);
 
                 break;
             //Descarregar Dados do Usuario

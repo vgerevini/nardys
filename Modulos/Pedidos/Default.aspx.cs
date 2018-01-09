@@ -24,13 +24,13 @@ public partial class _Default : System.Web.UI.Page
     private void IniciaPedidosTeste()
     {
         Produtos = new List<Produto>();
-        Produtos.Add(new Produto() { Id = 1, Nome = "Brahma Litrão", Valor = 6.5 });
-        Produtos.Add(new Produto() { Id = 2, Nome = "Skol Litrão", Valor = 7.5 });
-        Produtos.Add(new Produto() { Id = 3, Nome = "Devassa Premium 600", Valor = 6 });
-        Produtos.Add(new Produto() { Id = 4, Nome = "Marlboro Light", Valor = 10 });
-        Produtos.Add(new Produto() { Id = 5, Nome = "Marlboro Blue Ice", Valor = 10 });
-        Produtos.Add(new Produto() { Id = 6, Nome = "Amendoim", Valor = 3 });
-        Produtos.Add(new Produto() { Id = 7, Nome = "Halls", Valor = 2 });
+        Produtos.Add(new Produto() { Codigo = "1", Nome = "Brahma Litrão", Valor = 6.5 });
+        Produtos.Add(new Produto() { Codigo = "2", Nome = "Skol Litrão", Valor = 7.5 });
+        Produtos.Add(new Produto() { Codigo = "3", Nome = "Devassa Premium 600", Valor = 6 });
+        Produtos.Add(new Produto() { Codigo = "4", Nome = "Marlboro Light", Valor = 10 });
+        Produtos.Add(new Produto() { Codigo = "5", Nome = "Marlboro Blue Ice", Valor = 10 });
+        Produtos.Add(new Produto() { Codigo = "6", Nome = "Amendoim", Valor = 3 });
+        Produtos.Add(new Produto() { Codigo = "7", Nome = "Halls", Valor = 2 });
 
         PedidosExistentes = new List<Pedido>();
 
