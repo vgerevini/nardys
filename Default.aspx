@@ -26,21 +26,10 @@
                                     <div class="card card-login card-hidden">
 
                                         <div class="card-header text-center" data-background-color="green">
-                                            <h2><%=Resources.Textos.Login_Titulo %></h2>
                                         </div>
 
-                                        <%--<div class="input-group label-floating">
-                                            <span class="input-group-addon">
-                                                <i class="material-icons">email</i>
-                                            </span>
-                                            <div class="form-group label-floating">
-                                                <label class="control-label">Login</label>
-                                                <input type="email" maxlength="255" class="form-control" name="Email">
-                                            </div>
-                                        </div>--%>
-
                                         <asp:PlaceHolder runat="server" ID="phlMensagem" Visible="false">
-                                            <p style="width: 15em;">
+                                            <p class="error-login-message">
                                                 <asp:Label ID="lblMensagem" runat="server" ToolTip="Mensagem" Font-Bold="true"></asp:Label>
                                             </p>
                                         </asp:PlaceHolder>
@@ -60,27 +49,30 @@
                                                         <asp:RequiredFieldValidator ID="rfvSenha" runat="server" ControlToValidate="txtSenha" Text="*" ForeColor="Red" ToolTip="Preenchimento obrigatório"></asp:RequiredFieldValidator>
                                                     </label>
 
-                                                    <div class="no-label">
-                                                        <asp:Button runat="server" ID="btSubmit" Text="OK" OnClick="btSubmit_Click" ToolTip="OK" />
-                                                        <asp:Button runat="server" ID="btnEsqueciSenha" Text="Esqueci minha senha" OnClick="btSubmitEsqueciSenha_Click" CausesValidation="false" ToolTip="Esqueci minha senha" />
+                                                    <div class="no-label btn-login">
+                                                        <asp:Button runat="server" ID="btSubmit" Text="OK" OnClick="btSubmit_Click" ToolTip="Entrar" />
+                                                        <asp:Button runat="server" ID="btnEsqueciSenha" Text="Esqueci minha Senha" OnClick="btSubmitEsqueciSenha_Click" CausesValidation="false" ToolTip="Esqueci minha senha" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </asp:Panel>
 
                                         <asp:Panel ID="pnlEsqueciSenha" runat="server" Visible="false">
-                                            <label>
-                                                <asp:Label ID="lblEmailEsqueci" runat="server" ToolTip="Email"><%=Resources.Textos.Login_Campo_Esqueci_Senha_Email %></asp:Label>
-                                                <asp:TextBox runat="server" ID="txtEmailEsqueci" MaxLength="50" ToolTip="Informe Email"></asp:TextBox>
-                                            </label>
-                                            <div class="no-label">
-                                                <asp:Button runat="server" ID="btnEnviarEsqueci" Text="Enviar" OnClick="btnEnviarEsqueci_Click" ToolTip="Enviar" />
-                                                <asp:Button runat="server" ID="btnVoltar" Text="Voltar" OnClick="btnVoltar_Click" ToolTip="Voltar" />
+                                            <div class="input-group label-floating">
+                                                <div class="form-group label-floating">
+                                                    <label class="btn-forgot-pass">
+                                                        <asp:Label ID="lblEmailEsqueci" class="control-label" runat="server" ToolTip="Email"><%=Resources.Textos.Login_Campo_Esqueci_Senha_Email %></asp:Label>
+                                                        <asp:TextBox runat="server" class="form-control" ID="txtEmailEsqueci" MaxLength="50" ToolTip="Informe Email"></asp:TextBox>
+                                                    </label>
+                                                    <div class="no-label btn-login">
+                                                        <asp:Button runat="server" ID="btnEnviarEsqueci" Text="Enviar" OnClick="btnEnviarEsqueci_Click" ToolTip="Enviar" />
+                                                        <asp:Button runat="server" ID="btnVoltar" Text="Voltar" OnClick="btnVoltar_Click" ToolTip="Voltar" />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </asp:Panel>
 
                                         <asp:Panel ID="pnlPrimeiroAcesso" runat="server" Visible="false">
-
                                             <p>
                                                 <%=Resources.Textos.Login_Mensagem_Trocar_Senha %>
                                             </p>
@@ -97,7 +89,7 @@
                                                 <asp:RequiredFieldValidator ID="rfvSenhaNovaConfirma" runat="server" ControlToValidate="txtSenhaNovaConfirma" Text="*" ForeColor="Red" Display="Dynamic" ToolTip="Preenchimento obrigatório"></asp:RequiredFieldValidator>
                                             </label>
 
-                                            <div class="no-label" style="margin-left: 0 !important; width: auto !important; text-align: center !important;">
+                                            <div class="no-label btn-login" style="margin-left: 0 !important; width: auto !important; text-align: center !important;">
                                                 <asp:Button runat="server" ID="btnSalvarNovaSenha" Text="Salvar" OnClick="btnSalvarNovaSenha_Click" ToolTip="Salvar" />
                                             </div>
                                         </asp:Panel>

@@ -31,8 +31,7 @@ dialog,
 figcaption,
 figure,
 footer,
-header,.acoesdodia, .ultimosstatusalterado
-hgroup,
+header, .acoesdodia, .ultimosstatusalterado hgroup,
 main,
 meter,
 nav,
@@ -67,7 +66,7 @@ html {
     font-size: 85%;
     -webkit-text-size-adjust: 85%;
     -ms-text-size-adjust: 85%;
-    height:100%;
+    height: 100%;
     min-height: 100vh;
 }
 
@@ -762,8 +761,8 @@ html {
 body {
     font-family: 'Segoe UI', Verdana, Geneva, 'DejaVu Sans', sans-serif;
     color: #444;
-    height:100%;
-    min-height:100vh;
+    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -774,14 +773,14 @@ h4,
 h5,
 h6 {
     color: #fff;
-    font-family: cursive!important;
+    font-family: cursive !important;
     padding-bottom: .2em;
 }
 
 legend {
     color: #CC092F;
-    font-weight:600;
-    padding:0 .8em;
+    font-weight: 600;
+    padding: 0 .8em;
 }
 
 p,
@@ -811,9 +810,7 @@ button {
     }
 
 
-/ *Bradesco Expresso */ 
-
-html {
+/ *Bradesco Expresso */ html {
     min-height: 100%;
     min-width: 100vh;
 }
@@ -884,28 +881,27 @@ html {
                     }*/
 
 #content_pnlEsqueciSenha {
-
 }
 
-#content_pnlEsqueciSenha  .no-label {
+    #content_pnlEsqueciSenha .no-label {
         width: 25em !important;
         margin-left: -0.5em !important;
     }
 
 #content_pnlPrimeiroAcesso {
-    width:30em;
-    margin-left:-9em;
-    text-align:left !important;
+    width: 30em;
+    margin-left: -9em;
+    text-align: left !important;
 }
 
     #content_pnlPrimeiroAcesso div {
-        text-align:left !important;
+        text-align: left !important;
     }
 
     #content_pnlPrimeiroAcesso label input {
-        display:inline-block !important;
-        text-align:left !important;
-        width:20em;
+        display: inline-block !important;
+        text-align: left !important;
+        width: 20em;
         padding: .5em 1em;
     }
 
@@ -997,57 +993,88 @@ header {
     }
 
 /** Menu + Conteudo - INICIO **/
-label[for=menu-togle]{
-  cursor:pointer;
-  display:inline-block;
+label[for=menu-togle] {
+    cursor: pointer;
+    display: inline-block;
 }
 
-#menu-togle{
-  display:none;
+#menu-togle {
+    display: none;
 }
 
- #menu-togle + nav.menu{
-  width:15em;
-  /*max-width:0;*/
-  display:inline-block;
-  background:#72a32e;
-  position:absolute;
-  top: 5.3em;
-  height:100vh;
-  min-height:100%;
+    #menu-togle + nav.menu {
+        width: 15em;
+        /*max-width:0;*/
+        display: inline-block;
+        background: #72a32e;
+        position: absolute;
+        top: 5.3em;
+        height: 100vh;
+        min-height: 100%;
+    }
+
+nav.menu {
 }
 
-nav.menu{
-
+nav.menu, main {
+    transition: max-width .3s;
 }
 
-nav.menu, main{
-     transition:max-width .3s;
-}
-
-#menu-togle:checked + nav.menu{
-  max-width:12.5em;
-  display:none;
-
-}
-
-
-main.conteudo{
-
-  max-width:calc(100% - 17em);
-  margin-left:16em;
-}
-
-#menu-togle:checked ~ main{
-      width:100%;
-  max-width:100%;
-  display:inline-block;
-  padding: 0 .5em;
-  margin-left:0;
-
+#menu-togle:checked + nav.menu {
+    max-width: 12.5em;
+    display: none;
 }
 
 
+main.conteudo {
+    max-width: calc(100% - 17em);
+    margin-left: 16em;
+}
+
+#menu-togle:checked ~ main {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    padding: 0 .5em;
+    margin-left: 0;
+}
+
+div#content_pnlLogin {
+    top: -60px;
+    position: relative;
+}
+
+div#content_pnlEsqueciSenha {
+    position: relative;
+    top: -50px;
+}
+
+.btn-login.no-label input {
+    display: block;
+    margin: 10px auto 0;
+    width: 200px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 5px 31px -10px #000;
+    background-color: #72a32e;
+    color: #fff;
+}
+
+.btn-forgot-pass {
+    width: calc(100% - 60px) !important;
+    margin: 0 30px 30px;
+}
+
+p.error-login-message {
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    width: 15em;
+    color: #bf3030;
+    font-size: 16px;
+}
 
 /** Menu + Conteudo - FIM**/
 
@@ -1058,7 +1085,7 @@ nav a {
     font: 12px Helvetica, Arial, sans-serif;
     color: #000;
     text-decoration: none;
-    padding:.3em .5em;
+    padding: .3em .5em;
 }
 
 
@@ -1079,13 +1106,13 @@ nav a {
 
     nav a.current {
         border: dashed 1px #D8D7D7;
-        border-right:none;
+        border-right: none;
     }
 
 nav ul {
     padding: 10px 0 2em 0;
     margin: 0;
-    background:#72a32e;
+    background: #72a32e;
 }
 
     nav ul ul {
@@ -1295,7 +1322,7 @@ body header .navbar-btn {
     height: 15em;
     padding: 16px;
     border: 1px solid black;
-    border-radius:.8em;
+    border-radius: .8em;
     background-color: white;
     z-index: 1002;
     overflow: auto;
@@ -1306,14 +1333,14 @@ body header .navbar-btn {
         font-weight: bold;
         color: #CC092F;
         border-bottom: solid 1px #083667;
-        margin-top:.5em;
+        margin-top: .5em;
     }
 
     #divModalMensagem p {
         font-size: 14px;
         font-weight: normal;
         color: #333;
-        padding:1em 0;
+        padding: 1em 0;
     }
 
     #divModalMensagem span {
@@ -1333,9 +1360,9 @@ body header .navbar-btn {
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
-    position:absolute;
-    bottom:1em;
-    left:37.5%
+    position: absolute;
+    bottom: 1em;
+    left: 37.5%;
 }
 
 /* Paginação Listagem */
@@ -1418,332 +1445,331 @@ body header .navbar-btn {
 
 /* Somente para Chrome e Safari */
 /* @media screen and (-webkit-min-device-pixel-ratio:0) { */
-    .footer-paginacao.detail-log {
+.footer-paginacao.detail-log {
+    list-style: none;
+}
+
+/* Somente para IE7 e Firefox */
+.tb-grid td, x:-moz-any-link, x:default {
+    height: 52px;
+}
+
+.footer-paginacao.detail-log, x:-moz-any-link, x:default {
+    list-style: none;
+}
+
+    .footer-paginacao.detail-log ul, x:-moz-any-link, x:default {
         list-style: none;
     }
 
-    /* Somente para IE7 e Firefox */
-    .tb-grid td, x:-moz-any-link, x:default {
-        height: 52px;
+.footer-paginacao {
+    display: block;
+    margin: 10px auto 20px;
+    position: relative;
+    text-align: center;
+    font-size: .9em;
+    width: 100%;
+    min-width: 200px;
+    left: 0;
+}
+
+    .footer-paginacao ul {
+        display: inline-block;
     }
 
-    .footer-paginacao.detail-log, x:-moz-any-link, x:default {
-        list-style: none;
+    .footer-paginacao li {
+        display: inline;
+        float: left;
+        margin-right: 10px;
     }
 
-        .footer-paginacao.detail-log ul, x:-moz-any-link, x:default {
+/*LISTAGEM*/
+.listagem-Grid {
+    width: 100%;
+    font-size: 85%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    clear: both;
+    margin: .8em .8em 0 0;
+    box-sizing: content-box;
+    border: 1px solid #dddddd;
+}
+
+.tabelaHeader A {
+    text-decoration: none;
+    color: #000;
+}
+
+.listagem-Grid td, .topo-tb > th {
+    padding: .8em;
+    font-size: 100%;
+    border: 1px solid #dddddd;
+}
+
+td.tabelaHeader, .topo-tb > th {
+    text-align: center;
+    height: 2em;
+    border-right: 1px solid #cacaca !important;
+    border-bottom-width: 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+    td.tabelaHeader.ultimo, .topo-tb > th.ultimo {
+        border-right: 1px solid #fff !important;
+    }
+
+
+
+.listagem-Grid .impar {
+    background: #f3f4f5;
+}
+
+.listagem-Grid .par {
+    background: #ECEFEA;
+}
+
+.btn-acoes {
+    display: inline-block;
+}
+
+    .btn-acoes a {
+        padding: .4em 1.8em;
+        background-color: #CC092F;
+        color: #fff;
+        width: auto;
+        text-decoration: none;
+    }
+
+    .btn-acoes input {
+        /*padding: .6em 1.8em .4em;*/
+        padding: 0.85em 1.8em .6em 1.5em;
+        background-color: #CC092F;
+        color: #fff;
+        width: 2em !important;
+        text-decoration: none;
+    }
+
+.btn-acoes2 {
+    display: inline-block;
+    margin: 2em 0;
+}
+
+    .btn-acoes2 a {
+        padding: .4em 1.8em;
+        background-color: #CC092F;
+        color: #fff;
+        width: auto;
+        text-decoration: none;
+    }
+
+    .btn-acoes2 input {
+        padding: .6em 1.8em .4em;
+        background-color: #CC092F;
+        color: #fff;
+        width: auto;
+        text-decoration: none;
+        margin: 0 1em 0 0;
+    }
+
+.filtros {
+    background: #eee;
+    padding: 1.5em;
+    margin: 0 0 1em 0;
+    border-radius: 1em;
+}
+
+.msg-acao {
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    background: #eee;
+    padding: 1.5em;
+    margin: 0 0 1em 0;
+    border-radius: 1em;
+}
+
+.bem-vindo {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.bem-vindo-subtitulo {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.bem-vindo-usuario {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.listagem-Grid .desc {
+    background: url("../Imagens/sort_asc.png") no-repeat center right !important;
+}
+
+.listagem-Grid .asc {
+    background: url("../Imagens/sort_desc.png") no-repeat center right !important;
+}
+
+
+
+
+/** PERFIL - Edição **/
+
+ul.perfil-edicao {
+    list-style: none;
+}
+
+    ul.perfil-edicao li {
+        font-weight: bold;
+        border-bottom: dashed 1px #999;
+        padding: .5em;
+    }
+
+        ul.perfil-edicao li ul {
+            margin-left: 1em;
             list-style: none;
         }
 
-    .footer-paginacao {
-        display: block;
-        margin: 10px auto 20px;
-        position: relative;
-        text-align: center;
-        font-size: .9em;
-        width: 100%;
-        min-width: 200px;
-        left: 0;
-    }
-
-        .footer-paginacao ul {
-            display: inline-block;
-        }
-
-        .footer-paginacao li {
-            display: inline;
-            float: left;
-            margin-right: 10px;
-        }
-
-    /*LISTAGEM*/
-    .listagem-Grid {
-        width: 100%;
-        font-size: 85%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        clear: both;
-        margin: .8em .8em 0 0;
-        box-sizing: content-box;
-        border: 1px solid #dddddd;
-    }
-
-    .tabelaHeader A {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .listagem-Grid td, .topo-tb > th {
-        padding: .8em;
-        font-size: 100%;
-         border: 1px solid #dddddd;
-    }
-
-    td.tabelaHeader, .topo-tb > th {
-        text-align: center;
-        height: 2em;
-        border-right: 1px solid #cacaca !important;
-        border-bottom-width: 2px;
-        font-size: 1em;
-        font-weight: bold;
-    }
-
-        td.tabelaHeader.ultimo, .topo-tb > th.ultimo {
-            border-right: 1px solid #fff !important;
-        }
-
-
-
-    .listagem-Grid .impar {
-        background: #f3f4f5;
-    }
-
-    .listagem-Grid .par {
-        background: #ECEFEA;
-    }
-
-    .btn-acoes {
-        display: inline-block;
-    }
-
-        .btn-acoes a {
-            padding: .4em 1.8em;
-            background-color: #CC092F;
-            color: #fff;
-            width: auto;
-            text-decoration: none;
-        }
-
-        .btn-acoes input {
-            /*padding: .6em 1.8em .4em;*/
-            padding:0.85em 1.8em .6em 1.5em;
-            background-color: #CC092F;
-            color: #fff;
-            width: 2em !important;
-            text-decoration: none;
-        }
-
-    .btn-acoes2 {
-        display: inline-block;
-        margin: 2em 0;
-    }
-
-        .btn-acoes2 a {
-            padding: .4em 1.8em;
-            background-color: #CC092F;
-            color: #fff;
-            width: auto;
-            text-decoration: none;
-        }
-
-        .btn-acoes2 input {
-            padding: .6em 1.8em .4em;
-            background-color: #CC092F;
-            color: #fff;
-            width: auto;
-            text-decoration: none;
-            margin: 0 1em 0 0;
-        }
-
-    .filtros {
-        background: #eee;
-        padding: 1.5em;
-        margin: 0 0 1em 0;
-        border-radius: 1em;
-    }
-
-    .msg-acao {
-        text-align: center;
-        color: #ff0000;
-        font-weight: bold;
-        background: #eee;
-        padding: 1.5em;
-        margin: 0 0 1em 0;
-        border-radius: 1em;
-    }
-
-    .bem-vindo {
-        margin-left: 10px;
-        margin-top: 20px;
-        font-weight: bold;
-    }
-
-    .bem-vindo-subtitulo {
-        margin-left: 10px;
-        font-weight: bold;
-    }
-
-    .bem-vindo-usuario {
-        margin-left: 10px;
-        margin-top: 10px;
-        font-weight: bold;
-    }
-
-    .listagem-Grid .desc {
-        background: url("../Imagens/sort_asc.png") no-repeat center right !important;
-    }
-
-    .listagem-Grid .asc {
-        background: url("../Imagens/sort_desc.png") no-repeat center right !important;
-    }
-
-
-
-
-    /** PERFIL - Edição **/
-
-    ul.perfil-edicao {
-        list-style: none;
-    }
-
-        ul.perfil-edicao li {
-            font-weight: bold;
-            border-bottom: dashed 1px #999;
-            padding: .5em;
-        }
-
-            ul.perfil-edicao li ul {
-                margin-left: 1em;
-                list-style: none;
+            ul.perfil-edicao li ul li:last-child {
+                border-bottom: none;
             }
 
-                ul.perfil-edicao li ul li:last-child {
-                    border-bottom: none;
-                }
+/** LOGS **/
 
-    /** LOGS **/
+.dp-choose-date {
+    position: relative;
+    background: url("../Imagens/calendar.png") no-repeat;
+    height: 18px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 3em;
+    width: 1.2em;
+}
 
-    .dp-choose-date {
-        position: relative;
-        background: url("../Imagens/calendar.png") no-repeat;
-        height: 18px;
-        display: inline-block;
-        overflow: hidden;
-        line-height: 3em;
-        width: 1.2em;
+.dp-popup, .dp-popup > div {
+    width: 13em !important;
+}
+
+/** FORMULARIOS - GERAL **/
+
+.txtNumeroDdd {
+    max-width: 2em !important;
+    display: inline-block !important;
+}
+
+.txtNumero {
+    max-width: 10em !important;
+    display: inline-block !important;
+}
+
+.txtDate {
+    max-width: 9em !important;
+    display: inline-block !important;
+    /*margin: 1.2em .3em;*/
+}
+
+.txtPeriodo span:first-child {
+    display: block;
+}
+
+.txtPeriodo .dp-choose-date {
+    position: static;
+    background: url("../Imagens/calendar.png") no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 6em;
+    vertical-align: middle;
+}
+
+.validacao, .validacao span, .fields label span:nth-child(2), .fields label span:nth-child(3), .fields label span:last-child {
+    display: block;
+    color: #CC092F;
+    font-size: .8em;
+    margin: 0 0 .4em 0;
+}
+
+.fields label span:first-child {
+    display: inherit;
+    color: inherit;
+    font-size: inherit;
+    margin: inherit;
+}
+
+
+#divLoading {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+}
+
+    #divLoading img.loading_circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
     }
-
-    .dp-popup, .dp-popup > div {
-        width: 13em !important;
-    }
-
-    /** FORMULARIOS - GERAL **/
-
-    .txtNumeroDdd {
-        max-width: 2em !important;
-        display: inline-block !important;
-    }
-
-    .txtNumero {
-        max-width: 10em !important;
-        display: inline-block !important;
-    }
-
-    .txtDate {
-        max-width: 9em !important;
-        display: inline-block !important;
-        /*margin: 1.2em .3em;*/
-    }
-
-    .txtPeriodo span:first-child {
-        display: block;
-    }
-
-    .txtPeriodo .dp-choose-date {
-        position: static;
-        background: url("../Imagens/calendar.png") no-repeat;
-        width: 22px;
-        height: 22px;
-        display: inline-block;
-        overflow: hidden;
-        line-height: 6em;
-        vertical-align: middle;
-    }
-
-    .validacao, .validacao span, .fields label span:nth-child(2), .fields label span:nth-child(3), .fields label span:last-child {
-        display: block;
-        color: #CC092F;
-        font-size: .8em;
-        margin: 0 0 .4em 0;
-    }
-
-    .fields label span:first-child {
-        display: inherit;
-        color: inherit;
-        font-size: inherit;
-        margin: inherit;
-    }
-
-
-    #divLoading {
-        position: fixed;
-        padding: 0;
-        margin: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,0.5);
-    }
-
-        #divLoading img.loading_circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width:30px;
-            height:30px;
-        }
 
 .acoesdodia, .ultimosstatusalterado {
-    width:30%;
-    display:inline-block;
-    vertical-align:top;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .grid-acoesdodia {
-    width:95%;
-    
+    width: 95%;
 }
 
 .acoesdodia {
-    border-right:solid 1px #666;
-    margin-right:2.5em;
-    min-height:25em;
-    width:65%;
+    border-right: solid 1px #666;
+    margin-right: 2.5em;
+    min-height: 25em;
+    width: 65%;
 }
 
 
 .ultimosstatusalterado .filtros .fields {
-    margin:.5em 0;
+    margin: .5em 0;
 }
 
 .ultimosstatusalterado .btn-acoes2, .btn-acoes-right {
-    display:block;
-    text-align:right;
+    display: block;
+    text-align: right;
     margin: 2em 0 .5em 0;
 }
 
-        .btn-acoes-right a {
-            padding: .4em 1.8em;
-            background-color: #CC092F;
-            color: #fff;
-            width: auto;
-            text-decoration: none;
-        }
+    .btn-acoes-right a {
+        padding: .4em 1.8em;
+        background-color: #CC092F;
+        color: #fff;
+        width: auto;
+        text-decoration: none;
+    }
 
-        .btn-acoes-right input {
-            padding: .6em 1.8em .4em;
-            background-color: #CC092F;
-            color: #fff;
-            width: auto;
-            text-decoration: none;
-            margin: 0 1em 0 0;
-        }
+    .btn-acoes-right input {
+        padding: .6em 1.8em .4em;
+        background-color: #CC092F;
+        color: #fff;
+        width: auto;
+        text-decoration: none;
+        margin: 0 1em 0 0;
+    }
 
 
 .fields-edit:not(.no-columns) {
     column-width: 45em;
-    column-gap: 2em; 
+    column-gap: 2em;
 }
 
 .fields-edit textarea {
@@ -1938,77 +1964,76 @@ body header .navbar-btn {
 /* Prospects */
 
 .prospect-tabs {
-    display:inline-flex;
+    display: inline-flex;
 }
 
-.prospect-tabs a{
-    width:auto;
-    padding:.5em 1em;
-    margin:0 -.5em 0 0\9;
-    background:#ccc;
-    border:solid 1px #999;
-    border-bottom:none;
-    text-decoration:none;
-    color:#000;
-}
-
-    .prospect-tabs a:nth-child(2), .prospect-tabs a.tabSelecionado:nth-child(2) {
-        border-left:none;
-        border-right:none;
+    .prospect-tabs a {
+        width: auto;
+        padding: .5em 1em;
+        margin: 0 -.5em 0 0\9;
+        background: #ccc;
+        border: solid 1px #999;
+        border-bottom: none;
+        text-decoration: none;
+        color: #000;
     }
 
-    .prospect-tabs a:hover {
-        background:#999;
-        border:solid 1px #666;
-        color:#eaeaea;
-    }
+        .prospect-tabs a:nth-child(2), .prospect-tabs a.tabSelecionado:nth-child(2) {
+            border-left: none;
+            border-right: none;
+        }
 
-    .prospect-tabs a:focus {
-        outline:none;
-    }
+        .prospect-tabs a:hover {
+            background: #999;
+            border: solid 1px #666;
+            color: #eaeaea;
+        }
 
-    .prospect-tabs a.tabSelecionado {
-        background:#CC092F;
-        border:solid 1px #666;
-        color:#eaeaea;
-        border-bottom:none;
-    }
+        .prospect-tabs a:focus {
+            outline: none;
+        }
 
-.prospect-tabs-conteudo{
-    width:100%;
-    margin:0 0 0 0;
-    margin:.5em 0 0 0\9;
-    padding:1em 2em;
-    background:#f6f6f6;
-    border:solid 1px #999;
+        .prospect-tabs a.tabSelecionado {
+            background: #CC092F;
+            border: solid 1px #666;
+            color: #eaeaea;
+            border-bottom: none;
+        }
+
+.prospect-tabs-conteudo {
+    width: 100%;
+    margin: 0 0 0 0;
+    margin: .5em 0 0 0\9;
+    padding: 1em 2em;
+    background: #f6f6f6;
+    border: solid 1px #999;
 }
 
     .prospect-tabs-conteudo .txtDate {
         display: inline-block !important;
     }
 
-.fields span[style*="inline"], .fields-edit span[style*="inline"], .prospect-tabs-conteudo .fields-edit span[style*="inline"]{
-    color:#CC092F;
+    .fields span[style*="inline"], .fields-edit span[style*="inline"], .prospect-tabs-conteudo .fields-edit span[style*="inline"] {
+        color: #CC092F;
+    }
+
+
+/* CHECK LIST BRADESCO */
+
+.btn-add-del {
+    background: #CC092F;
+    color: #fff;
+    text-decoration: none;
+    min-width: 30px !important;
+    vertical-align: text-top;
 }
 
-
-    /* CHECK LIST BRADESCO */
-
-    .btn-add-del {
-             background: #CC092F;
-            color: #fff;
-            text-decoration: none;
-            min-width:30px !important;
-            vertical-align:text-top;
-        }
-
 .btn-add-upload-files {
-            background: #CC092F;
-            color: #fff;
-            text-decoration: none;
-            width:auto !important;
-            vertical-align:text-top;
-            
+    background: #CC092F;
+    color: #fff;
+    text-decoration: none;
+    width: auto !important;
+    vertical-align: text-top;
 }
 
 /* REPORTS */
@@ -2016,7 +2041,7 @@ body header .navbar-btn {
     background-color: #CC092F;
     color: #fff;
     border: none;
-    padding: .5em  1em;
+    padding: .5em 1em;
     /*text-transform: lowercase;*/
     min-width: 6em;
 }
@@ -2025,571 +2050,565 @@ body header .navbar-btn {
 /* Media Queries */
 @media all and (max-width:480px) {
     .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:28em;
+        display: inline-block;
+        width: 28em;
     }
 
     .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:28em;
-        vertical-align:top;
+        display: inline-block;
+        width: 28em;
+        vertical-align: top;
     }
 
     .fields-edit:not(.no-columns) {
-    column-width: 18em;
-    column-gap: 2em; 
+        column-width: 18em;
+        column-gap: 2em;
     }
 
     .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 25em;
-        }
-
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 25em;
+    }
 }
 
 
 @media all and (min-width:600px) {
     .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:28em;
+        display: inline-block;
+        width: 28em;
     }
 
     .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:28em;
-        vertical-align:top;
+        display: inline-block;
+        width: 28em;
+        vertical-align: top;
     }
 
     .fields-edit:not(.no-columns) {
-    column-width: 18em;
-    column-gap: 2em; 
+        column-width: 18em;
+        column-gap: 2em;
     }
 
     .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 25em;
-        }
-
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 25em;
+    }
 }
 
 @media all and (min-width:768px) {
     .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:17em;
+        display: inline-block;
+        width: 17em;
     }
 
     .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:17em;
-        vertical-align:top;
+        display: inline-block;
+        width: 17em;
+        vertical-align: top;
     }
 
     .fields-edit:not(.no-columns) {
-    column-width: 21em;
-    column-gap: 2em; 
+        column-width: 21em;
+        column-gap: 2em;
     }
 
     .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 18em;
-        }
-
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 18em;
+    }
 }
 
 @media all and (min-width:900px) {
     .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:17em;
+        display: inline-block;
+        width: 17em;
     }
 
     .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:auto;
-        vertical-align:top;
+        display: inline-block;
+        width: auto;
+        vertical-align: top;
     }
 
     .fields-edit:not(.no-columns) {
-    column-width: 21em;
-    column-gap: 2em; 
+        column-width: 21em;
+        column-gap: 2em;
     }
 
     .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 22em;
-        }
-
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 22em;
+    }
 }
 
 @media all and (min-width:1024px) {
     .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:14em;
+        display: inline-block;
+        width: 14em;
     }
 
     .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:auto;
-        vertical-align:top;
+        display: inline-block;
+        width: auto;
+        vertical-align: top;
     }
 
     .fields-edit:not(.no-columns) {
-    column-width: 25em;
-    column-gap: 2em; 
+        column-width: 25em;
+        column-gap: 2em;
     }
 
     .fields label.txtPeriodo, .fields-edit label.txtPeriodo {
-        width:25em;
+        width: 25em;
     }
 
     .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 32em;
-        }
-
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 32em;
+    }
 }
 
 @media all and (min-width:1200px) {
-   .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:20em;
+    .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
+        display: inline-block;
+        width: 20em;
     }
 
-   .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:20em;
-        vertical-align:top;
+    .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
+        display: inline-block;
+        width: 20em;
+        vertical-align: top;
     }
 
-   .fields-edit:not(.no-columns) {
-    column-width: 25em;
-    column-gap: 2em; 
+    .fields-edit:not(.no-columns) {
+        column-width: 25em;
+        column-gap: 2em;
     }
 
-   .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 29em;
-        }
-
+    .fields-edit > label > span:first-child,
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 29em;
+    }
 }
 
 @media all and (min-width:1600px) {
-   .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:25em;
+    .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
+        display: inline-block;
+        width: 25em;
     }
 
-   .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:auto;
-        vertical-align:top;
+    .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
+        display: inline-block;
+        width: auto;
+        vertical-align: top;
     }
 
-   .fields-edit:not(.no-columns) {
-    column-width: 29em;
-    column-gap: 2em; 
+    .fields-edit:not(.no-columns) {
+        column-width: 29em;
+        column-gap: 2em;
     }
 
-   .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 37em;
-        }
+    .fields-edit > label > span:first-child,
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 37em;
+    }
 }
 
 @media all and (min-width:2000px) {
-   .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
-        display:inline-block;
-        width:26em;
+    .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
+        display: inline-block;
+        width: 26em;
     }
 
-   .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
-        display:inline-block;
-        width:26em;
-        vertical-align:top;
+    .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
+        display: inline-block;
+        width: 26em;
+        vertical-align: top;
     }
 
-   .fields-edit:not(.no-columns) {
-    column-width: 31em;
-    column-gap: 2em; 
+    .fields-edit:not(.no-columns) {
+        column-width: 31em;
+        column-gap: 2em;
     }
 
-   .fields-edit > label > span:first-child,
-        .fields-edit > fieldset > label > span:first-child,
-        .fields-edit > div > label > span:first-child,
-        .fields-edit > div > span:first-child,
-        .fields-edit > fieldset > div > span:first-child,
-        .fields-edit > div > div > span:first-child,
-        .fields-edit > label > input[type=text],
-        .fields-edit > fieldset > label > input[type=text],
-        .fields-edit > div > label > input[type=text],
-        .fields-edit > div > input[type=text],
-        .fields-edit > fieldset > div > input[type=text],
-        .fields-edit > div > div > input[type=text],
-        .fields-edit > label > input[type=password],
-        .fields-edit > fieldset > label > input[type=password],
-        .fields-edit > div > label > input[type=password],
-        .fields-edit > div > input[type=password],
-        .fields-edit > fieldset > div > input[type=password],
-        .fields-edit > div > div > input[type=password],
-        .fields-edit > label input:not([type]),
-        .fields-edit > fieldset > label input:not([type]),
-        .fields-edit > div > label input:not([type]),
-        .fields-edit > div input:not([type]),
-        .fields-edit > fieldset > div input:not([type]),
-        .fields-edit > div > div input:not([type]),
-        .fields-edit > label > select,
-        .fields-edit > fieldset > label > select,
-        .fields-edit > div > label > select,
-        .fields-edit > div > select,
-        .fields-edit > fieldset > div > select,
-        .fields-edit > div > div > select,
-        .fields-edit > label > input[type=submit],
-        .fields-edit > fieldset > label > input[type=submit],
-        .fields-edit > div > label > input[type=submit],
-        .fields-edit > div > input[type=submit],
-        .fields-edit > fieldset > div > input[type=submit],
-        .fields-edit > div > div > input[type=submit],
-        .fields-edit > label > textarea,
-        .fields-edit > fieldset > label > textarea,
-        .fields-edit > div > label > textarea,
-        .fields-edit > div > textarea,
-        .fields-edit > fieldset > div > textarea,
-        .fields-edit > div > div > textarea,
-        .fields-edit > label > .RadComboBox,
-        .fields-edit > fieldset > label > .RadComboBox,
-        .fields-edit > div > label > .RadComboBox,
-        .fields-edit > div > .RadComboBox,
-        .fields-edit > fieldset > div > .RadComboBox,
-        .fields-edit > div > div > .RadComboBox {
-            display: block;
-            width: 38em;
-        }
+    .fields-edit > label > span:first-child,
+    .fields-edit > fieldset > label > span:first-child,
+    .fields-edit > div > label > span:first-child,
+    .fields-edit > div > span:first-child,
+    .fields-edit > fieldset > div > span:first-child,
+    .fields-edit > div > div > span:first-child,
+    .fields-edit > label > input[type=text],
+    .fields-edit > fieldset > label > input[type=text],
+    .fields-edit > div > label > input[type=text],
+    .fields-edit > div > input[type=text],
+    .fields-edit > fieldset > div > input[type=text],
+    .fields-edit > div > div > input[type=text],
+    .fields-edit > label > input[type=password],
+    .fields-edit > fieldset > label > input[type=password],
+    .fields-edit > div > label > input[type=password],
+    .fields-edit > div > input[type=password],
+    .fields-edit > fieldset > div > input[type=password],
+    .fields-edit > div > div > input[type=password],
+    .fields-edit > label input:not([type]),
+    .fields-edit > fieldset > label input:not([type]),
+    .fields-edit > div > label input:not([type]),
+    .fields-edit > div input:not([type]),
+    .fields-edit > fieldset > div input:not([type]),
+    .fields-edit > div > div input:not([type]),
+    .fields-edit > label > select,
+    .fields-edit > fieldset > label > select,
+    .fields-edit > div > label > select,
+    .fields-edit > div > select,
+    .fields-edit > fieldset > div > select,
+    .fields-edit > div > div > select,
+    .fields-edit > label > input[type=submit],
+    .fields-edit > fieldset > label > input[type=submit],
+    .fields-edit > div > label > input[type=submit],
+    .fields-edit > div > input[type=submit],
+    .fields-edit > fieldset > div > input[type=submit],
+    .fields-edit > div > div > input[type=submit],
+    .fields-edit > label > textarea,
+    .fields-edit > fieldset > label > textarea,
+    .fields-edit > div > label > textarea,
+    .fields-edit > div > textarea,
+    .fields-edit > fieldset > div > textarea,
+    .fields-edit > div > div > textarea,
+    .fields-edit > label > .RadComboBox,
+    .fields-edit > fieldset > label > .RadComboBox,
+    .fields-edit > div > label > .RadComboBox,
+    .fields-edit > div > .RadComboBox,
+    .fields-edit > fieldset > div > .RadComboBox,
+    .fields-edit > div > div > .RadComboBox {
+        display: block;
+        width: 38em;
+    }
 }
