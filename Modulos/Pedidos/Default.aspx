@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" MasterPageFile="~/Modulos/Modulos.master" %>
 
+<%@ Register Src="~/Modulos/Pedidos/Novo.ascx" TagPrefix="uc1" TagName="Novo" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="contentInterna" runat="Server">
     <%--Scripts--%>
     <script src="../../Assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -25,22 +28,22 @@
     <div class="box">
         <asp:Repeater ID="rptPedidos" runat="server" OnItemCommand="rptPedidos_ItemCommand">
             <ItemTemplate>
-                <div class="item <%#  Convert.ToBoolean(Convert.ToDateTime(Eval("DataCriacao")).Date == DateTime.Today) ? "pendente" : "atrasado" %>" title="<%#  Eval("Status") %>">
-                    <asp:LinkButton ID="lnkDetalhes" CssClass="lnk-detalhes" runat="server" CommandName="Detalhes" CommandArgument='<%#  Eval("Id") %>'>
-                        <asp:Label ID="lblDescricao" CssClass="divPedidoTitulo" runat="server" Text='<%#  Eval("Descricao") %>' title='<%# Eval("Descricao") %>'></asp:Label>
-                        <asp:Label ID="lblData" runat="server" Text='<%#  Eval("DataCriacao") %>'></asp:Label>
-                        <asp:Label ID="lblHora" runat="server" Text='<%#  Eval("HoraCriacao") %>'></asp:Label>
+                <div class="item <%#  Convert.ToBoolean(Convert.ToDateTime(Eval("Data")).Date == DateTime.Today) ? "pendente" : "atrasado" %>" title="<%#  Eval("DescricaoStatus") %>">
+                    <asp:LinkButton ID="lnkDetalhes" CssClass="lnk-detalhes" runat="server" CommandName="Detalhes" CommandArgument='<%#  Eval("IdPedido") %>'>
+                        <asp:Label ID="lblDescricao" CssClass="divPedidoTitulo" runat="server" Text='<%#  Eval("NomeCliente") %>' title='<%# Eval("NomeCliente") %>'></asp:Label>
+                        <asp:Label ID="lblData" runat="server" Text='<%#  Convert.ToDateTime(Eval("Data")).ToShortDateString() %>'></asp:Label>
+                        <asp:Label ID="lblHora" runat="server" Text='<%#  string.Format("{0:C}", Eval("ValorTotal")) %>'></asp:Label>
                     </asp:LinkButton>
 
                     <div class="submenu-content">
                         <div class="submenu-icon">
-                            <div class="submenu-icon-nav">
-                                <asp:LinkButton ID="lnkAddComanda" runat="server" CommandName="Adicionar" CommandArgument='<%#  Eval("Id") %>'>
+                            <div class="submenu-icon-nav" title="Adicionar Comanda">
+                                <asp:LinkButton ID="lnkAddComanda" runat="server" CommandName="Adicionar" CommandArgument='<%#  Eval("IdPedido") %>'>
                                         <i class="mdi mdi-pencil"></i>
                                 </asp:LinkButton>
                             </div>
-                            <div class="submenu-icon-nav">
-                                <asp:LinkButton ID="lnkFecharComanda" runat="server" CommandName="Fechar" CommandArgument='<%#  Eval("Id") %>'>
+                            <div class="submenu-icon-nav" title="Fechar Comanda">
+                                <asp:LinkButton ID="lnkFecharComanda" runat="server" CommandName="Fechar" CommandArgument='<%#  Eval("IdPedido") %>'>
                                         <i class="mdi mdi-close-circle"></i>
                                 </asp:LinkButton>
                             </div>
@@ -60,14 +63,7 @@
     <asp:Panel ID="pnlNovo" Visible="false" runat="server" CssClass="modal-glob">
         <div class="modal-cont">
             <div class="cont-title">
-                <h2>Novo pedido</h2>
-                <p>Painel Nova Comanda</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <uc1:Novo runat="server" ID="Novo" />
             </div>
         </div>
     </asp:Panel>

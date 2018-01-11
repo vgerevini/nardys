@@ -1138,4 +1138,10 @@ http://bradescoexpresso.com.br/html/clube-de-vantagens.shtm</value>
   <data name="Modulo_Produto_Valor" xml:space="preserve">
     <value>Valor</value>
   </data>
+  <data name="Mensagem_Atualizado_Sucesso" xml:space="preserve">
+    <value>Registro atualizado com sucesso!</value>
+  </data>
+  <data name="Mensagem_Salva_Sucesso" xml:space="preserve">
+    <value>Registro incluído com sucesso!</value>
+  </data>
 </root>

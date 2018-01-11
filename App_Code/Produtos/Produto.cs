@@ -25,9 +25,9 @@ public class Produto
         {
             return;
         }
-        if ((!object.ReferenceEquals(pobjIDataReader["Codigo"], DBNull.Value)))
+        if ((!object.ReferenceEquals(pobjIDataReader["codigoProduto"], DBNull.Value)))
         {
-            this.Codigo = pobjIDataReader["Codigo"].ToString();
+            this.Codigo = pobjIDataReader["codigoProduto"].ToString();
         }
         if ((!object.ReferenceEquals(pobjIDataReader["CategoriaId"], DBNull.Value)))
         {

@@ -26,7 +26,7 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
             
         if (!String.IsNullOrWhiteSpace(pstrCodigo))
-            objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pstrCodigo;
+            objComando.Parameters.Add("@CODIGOPRODUTO", SqlDbType.VarChar, 200).Value = pstrCodigo;
 
         try
         {
@@ -79,9 +79,9 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure
-        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
+        objComando.Parameters.Add("@CODIGOPRODUTO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
         objComando.Parameters.Add("@CATEGORIAID", SqlDbType.Int).Value = pobjProduto.IdCategoria;
-        objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar).Value = pobjProduto.Nome;
+        objComando.Parameters.Add("@NOME", SqlDbType.VarChar).Value = pobjProduto.Nome;
         objComando.Parameters.Add("VALOR", SqlDbType.Decimal).Value = pobjProduto.Valor;
 
         try
@@ -130,9 +130,9 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure               
-        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
+        objComando.Parameters.Add("@CODIGOPRODUTO", SqlDbType.VarChar, 200).Value = pobjProduto.Codigo;
         objComando.Parameters.Add("@CATEGORIAID", SqlDbType.Int).Value = pobjProduto.IdCategoria;
-        objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar).Value = pobjProduto.Nome;
+        objComando.Parameters.Add("@NOME", SqlDbType.VarChar).Value = pobjProduto.Nome;
         objComando.Parameters.Add("VALOR", SqlDbType.Decimal).Value = pobjProduto.Valor;
 
         try
@@ -182,7 +182,7 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         ///Parametros
-        if (!string.IsNullOrEmpty(pstrNome)) objComando.Parameters.Add("@NOMEPRODUTO", SqlDbType.VarChar, 200).Value = pstrNome;
+        if (!string.IsNullOrEmpty(pstrNome)) objComando.Parameters.Add("@NOME", SqlDbType.VarChar, 200).Value = pstrNome;
         if (pintCategoriaId > 0) objComando.Parameters.Add("@IDCATEGORIA", SqlDbType.Int).Value = pintCategoriaId;
 
         try
@@ -235,7 +235,7 @@ public class DOProduto
         objComando.CommandType = CommandType.StoredProcedure;
 
         //Define parametros da procedure               
-        objComando.Parameters.Add("@CODIGO", SqlDbType.VarChar, 200).Value = pstrId;
+        objComando.Parameters.Add("@codigoProduto", SqlDbType.VarChar, 200).Value = pstrId;
 
         try
         {

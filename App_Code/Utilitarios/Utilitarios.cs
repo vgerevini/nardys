@@ -34,11 +34,10 @@ namespace Utilitarios
         , Limpar = 2
     }
 
-    public enum TipoEmailVan
+    public enum StatusPedido
     {
-        Conteudo = 1
-        , EsqueciSenha = 2
-        , ProspectGerencia = 3
+        Pendente = 1
+        , Pago = 2
     }
     #endregion
 
