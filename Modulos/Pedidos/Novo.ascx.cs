@@ -43,7 +43,7 @@ public partial class Modulos_Pedidos_Novo : System.Web.UI.UserControl
             DOLog.Inserir(string.Concat("Erro Sistema: ", ex), Utilitarios.TipoLog.Sistema, usuarioLogado.Id);
         }
 
-        Response.Redirect("~/Modulos/Pedidos/Default.aspx?Sucesso=1");
+        Response.Redirect("~/Modulos/Pedidos/Default.aspx");
     }
     #endregion
 }

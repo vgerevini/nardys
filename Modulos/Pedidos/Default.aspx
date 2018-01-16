@@ -1,9 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" MasterPageFile="~/Modulos/Modulos.master" %>
 
 <%@ Register Src="~/Modulos/Pedidos/Novo.ascx" TagPrefix="uc1" TagName="Novo" %>
-
+<%@ Register Src="~/Modulos/Pedidos/ConsultaProduto.ascx" TagPrefix="uc1" TagName="ConsultaProduto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentInterna" runat="Server">
+
     <%--Scripts--%>
     <script src="../../Assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="../../Assets/js/main.js" type="text/javascript"></script>
@@ -24,6 +25,7 @@
 
     <div>
         <asp:Button ID="btnNovaComanda" runat="server" Text="Nova Comanda" CssClass="btnNovaComanda" OnClick="btnNovaComanda_Click" />
+        <asp:Button ID="btnConsultaProduto" runat="server" Text="Consulta Produto" CssClass="btnNovaComanda" OnClick="btnConsultaProduto_Click" />
     </div>
     <div class="box">
         <asp:Repeater ID="rptPedidos" runat="server" OnItemCommand="rptPedidos_ItemCommand">
@@ -61,11 +63,8 @@
     </div>
 
     <asp:Panel ID="pnlNovo" Visible="false" runat="server" CssClass="modal-glob">
-        <div class="modal-cont">
-            <div class="cont-title">
-                <uc1:Novo runat="server" ID="Novo" />
-            </div>
-        </div>
+        <uc1:Novo runat="server" ID="Novo" />
+        
     </asp:Panel>
     <asp:Panel ID="pnlItem" Visible="false" runat="server" CssClass="modal-glob">
         <div class="modal-cont">
@@ -103,14 +102,17 @@
                 <p>
                     <asp:DropDownList ID="ddlComandas" runat="server"></asp:DropDownList>
                     <asp:Button ID="btnAdd" runat="server" Text="+" />
-                                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </p>
             </div>
         </div>
+    </asp:Panel>
+    <asp:Panel ID="pnlConsultarProduto" Visible="false" runat="server" CssClass="modal-glob">
+        <uc1:ConsultaProduto runat="server" ID="ConsultaProduto" />
     </asp:Panel>
 </asp:Content>

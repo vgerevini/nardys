@@ -63,6 +63,63 @@ public class DOProduto
     }
     #endregion
 
+    #region Listar
+    /// <summary>
+    /// Obter Produtos pelo código de Barras ou nome
+    /// </summary>
+    /// <param name="pstrBusca">Termo de busca</param>
+    /// <returns></returns>
+    public static List<Produto> Listar(string pstrBusca)
+    {
+        string strConectionString = ConfigurationManager.ConnectionStrings["BradescoExpresso"].ConnectionString;
+        SqlConnection objConexao = new SqlConnection(strConectionString);
+
+        SqlCommand objComando = new SqlCommand("SPE_L_PRODUTO_BUSCA");
+        objComando.Connection = objConexao;
+        objComando.CommandType = CommandType.StoredProcedure;
+
+        ///Parametros
+        objComando.Parameters.Add("@BUSCA", SqlDbType.VarChar, 200).Value = pstrBusca;
+        
+        try
+        {
+            //Abre Conexao
+            objConexao.Open();
+
+            //Declara variavel de retorno           
+            List<Produto> objListProduto = new List<Produto>();
+            Produto objProduto = default(Produto);
+
+            IDataReader idrReader = default(IDataReader);
+
+            idrReader = objComando.ExecuteReader();
+
+            while ((idrReader.Read()))
+            {
+                objProduto = new Produto();
+                objProduto.FromIDataReader(idrReader);
+                objListProduto.Add(objProduto);
+            }
+
+            return objListProduto;
+
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+
+        }
+        finally
+        {
+            //Fecha a conexao se aberta
+            if (objConexao.State != ConnectionState.Closed)
+            {
+                objConexao.Close();
+            }
+        }
+    }
+    #endregion
+
     #region Atualizar
     /// <summary>
     /// Atualiza produto

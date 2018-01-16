@@ -55,6 +55,7 @@ public partial class _Default : System.Web.UI.Page
         pnlItem.Visible = false;
         pnlAdicionar.Visible = false;
         pnlFechamento.Visible = false;
+        pnlConsultarProduto.Visible = false;
     }
 
     protected void rptPedidos_ItemCommand(object source, RepeaterCommandEventArgs e)
@@ -68,6 +69,7 @@ public partial class _Default : System.Web.UI.Page
                 pnlNovo.Visible = false;
                 pnlFechamento.Visible = false;
                 pnlAdicionar.Visible = false;
+                pnlConsultarProduto.Visible = false;
                 pnlItem.Visible = true;
                 pnlItem.CssClass = " modal-glob active";
             }
@@ -76,6 +78,7 @@ public partial class _Default : System.Web.UI.Page
                 pnlNovo.Visible = false;
                 pnlItem.Visible = false;
                 pnlAdicionar.Visible = false;
+                pnlConsultarProduto.Visible = false;
                 pnlFechamento.Visible = true;
                 pnlFechamento.CssClass = " modal-glob active";
             }
@@ -84,9 +87,20 @@ public partial class _Default : System.Web.UI.Page
                 pnlNovo.Visible = false;
                 pnlItem.Visible = false;
                 pnlFechamento.Visible = false;
+                pnlConsultarProduto.Visible = false;
                 pnlAdicionar.Visible = true;
                 pnlAdicionar.CssClass = " modal-glob active";
             }
         }
+    }
+
+    protected void btnConsultaProduto_Click(object sender, EventArgs e)
+    {
+        pnlConsultarProduto.CssClass = " modal-glob active";
+        pnlConsultarProduto.Visible = true;
+        pnlItem.Visible = false;
+        pnlAdicionar.Visible = false;
+        pnlFechamento.Visible = false;
+        pnlNovo.Visible = false;
     }
 }
