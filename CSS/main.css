@@ -83,11 +83,7 @@ a:hover {
 
     a:visited {
         color: inherit;
-    }
-
-    a:focus {
-        outline: dashed 1px #bbb;
-    }
+    }    
 
 h1,
 h2,
@@ -761,8 +757,8 @@ html {
 body {
     font-family: 'Segoe UI', Verdana, Geneva, 'DejaVu Sans', sans-serif;
     color: #444;
-    height: 100%;
-    min-height: 100vh;
+    /*height: 100%;
+    min-height: 100vh;*/
     margin: 0 auto;
 }
 
@@ -910,7 +906,7 @@ button {
         margin-left: 10.5em !important;
     }
 
-header {
+/*header {
     position: relative;
     display: block;
     clear: both;
@@ -990,7 +986,7 @@ header {
     header .logo {
         vertical-align: top;
         margin-top: 0.5em;
-    }
+    }*/
 
 /** Menu + Conteudo - INICIO **/
 label[for=menu-togle] {
@@ -1028,7 +1024,8 @@ nav.menu, main {
 
 main.conteudo {
     max-width: calc(100% - 17em);
-    margin-left: 16em;
+    /*margin-left: 16em;*/
+    margin: 0 auto;
 }
 
 #menu-togle:checked ~ main {

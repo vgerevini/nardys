@@ -1,0 +1,647 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900");
+@import url("//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #4b4b4b;
+    background: #eee;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+/*Scroll bar main-menu*/
+.nav-menu ::-webkit-scrollbar {
+    width: 4px;
+}
+
+.nav-menu ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.nav-menu ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/*Placeholder*/
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    color: #ccc;
+}
+/**/
+header {    
+    padding: 0 24px;    
+    display: flex;
+    z-index: 999;
+    position: fixed;    
+}
+
+    header > div,
+    header > div > div {
+        display: flex;
+    }
+
+    header .tools {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #666;
+        display: flex;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        header .tools li {
+            border-right: 1px solid rgba(128,128,128,0.5);
+        }
+
+            header .tools li:last-child {
+                border: none;
+            }
+/* Components *******************************************************************/
+/* Collapse Search */
+.collapse-search {
+    text-align: right;
+    white-space: nowrap;
+}
+
+    .collapse-search label {
+        cursor: pointer;
+        vertical-align: middle;
+        color: #666;
+        margin: 0;
+    }
+
+    .collapse-search input {
+        border: 0;
+        background: none;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        border-bottom: 1px solid rgba(0,0,0,0);
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        .collapse-search input:focus {
+            width: 130px;
+            outline: 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+/* User Profile Menu */
+.profile-menu {
+    line-height: 1em;
+    position: relative;
+    padding: 0.5em 0;
+}
+
+    .profile-menu .dropdown {
+        padding-left: 46px;
+        cursor: pointer;
+    }
+
+    .profile-menu .avatar {
+        position: absolute;
+        left: 0;
+        top: 45%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+
+    .profile-menu small {
+        display: block;
+        line-height: 1.7em;
+        font-size: 0.9em;
+        opacity: 0.7;
+    }
+
+    .profile-menu h6 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1em;
+    }
+/* System Menu*/
+.check-control {
+    display: none;
+}
+
+.menu-bt {
+    z-index: 999;
+    cursor: pointer;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+    .menu-bt:before {
+        display: block;
+        width: 24px;
+        height: 24px;
+        font-family: "Material Design Icons";
+        font-size: 24px;
+        font-weight: normal;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        color: #666;
+    }
+
+    .menu-bt.right:before {
+        content: "\f1d8";
+    }
+
+    .menu-bt.left:before {
+        content: "\f35c";
+    }
+
+/*#menu-right:checked + .menu-bt:before {
+    color: #fff;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}*/
+
+[id*=menu-]:checked + .menu-bt:before {
+    color: #fff;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+[id*=menu-]:checked + .menu-bt:before {
+    content: "\f5ad";
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    height: 100vh;
+    width: 80%;
+    max-width: 320px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0 0 12px rgba(0,0,0,0), 0 0 32px rgba(0,0,0,0);
+}
+
+    .nav-menu.right {
+        -webkit-transform: translate(100%);
+        -ms-transform: translate(100%);
+        -o-transform: translate(100%);
+        transform: translate(100%);
+    }
+
+    .nav-menu.left {
+        -webkit-transform: translate(-100%);
+        -ms-transform: translate(-100%);
+        -o-transform: translate(-100%);
+        transform: translate(-100%);
+    }
+
+[id*=menu-]:checked ~ .nav-menu {
+    box-shadow: 0 0 12px rgba(0,0,0,0.1), 0 0 32px rgba(0,0,0,0.2);
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}
+
+.nav-menu.left {
+    left: 0;
+}
+
+.nav-menu.right {
+    right: 0;
+}
+
+.nav-menu h5 {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85em;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 32px 24px 14px 24px;
+}
+
+    .nav-menu h5:after {
+        content: "";
+        display: block;
+        width: 3em;
+        margin-top: 5px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+.nav-menu a {
+    display: block;
+    color: #fff;
+    padding: 14px 8px 14px 58px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 3px;
+}
+
+    .nav-menu a:before {
+        margin-right: 14px;
+        font-size: 24px;
+        left: 20px;
+        top: 9px;
+        position: absolute;
+    }   
+
+.menu-scroll ul{
+    list-style: none;
+}
+
+.menu-scroll ul > li a{
+    padding-left: 0;
+}
+
+.menu-scroll > ul > li > a {
+    color: #fff;
+    font-size: 0.85em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav-menu .menu-scroll {
+    height: calc(100vh - 72px);
+    overflow-y: auto;
+    margin-top: 72px;
+    padding: 0 8px 24px 8px;
+    width: 100%;
+    margin-right: 8px;
+}
+/* Notification Center*/
+.notification-center {
+    margin-right: 48px;
+    position: relative;
+}
+
+    .notification-center > label {
+        cursor: pointer;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+.modal-notification {
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    width: 90vw;
+    max-width: 530px;
+    height: 90vh;
+    right: -52px;
+    margin-top: 16px;
+    max-height: 400px;
+    box-shadow: 0 2px 16px -3px rgba(0,0,0,0.05), 0 12px 32px -3px rgba(0,0,0,0.08), 0 30px 60px -10px rgba(0,0,0,0.05);
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#notification-control:checked ~ .modal-notification {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-notification:after {
+    content: "\f09a";
+    font-family: "Material Design Icons";
+    font-size: 24px;
+    color: rgba(0,0,0,0.2);
+    position: absolute;
+    left: 18px;
+    top: 18px;
+}
+
+.modal-notification:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff;
+    right: 52px;
+    top: -12px;
+    width: 24px;
+    height: 24px;
+    box-shadow: -2.5px -2.5px 6px rgba(0,0,0,0.04);
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal-notification .heading {
+    display: table;
+    width: 100%;
+    height: 62px;
+    padding: 0;
+}
+
+    .modal-notification .heading li {
+        width: 50%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+
+        .modal-notification .heading li:first-child:after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 22px;
+            border-right: 1px solid rgba(0,0,0,0.1);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+    .modal-notification .heading a {
+        line-height: 52px;
+        margin-top: 8px;
+        display: inline-block;
+        text-decoration: none;
+        color: #6f7f86;
+    }
+
+    .modal-notification .heading .active {
+        font-weight: 600;
+    }
+
+.notification-scroll {
+    max-height: 270px;
+    height: calc(100% - 112px);
+    overflow-y: auto;
+    box-shadow: inset 0 48px 120px -60px rgba(0,0,0,0.1), inset 0 14px 10px -14px rgba(0,0,0,0.1), inset 0 -14px 10px -14px rgba(0,0,0,0.1), inset 0 -48px 120px -60px rgba(0,0,0,0.1);
+}
+
+    .notification-scroll ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .notification-scroll li {
+        border-bottom: 3px solid rgba(0,0,0,0.04);
+        position: relative;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        .notification-scroll li a {
+            padding: 1.2em 2em;
+            display: block;
+            color: #89949f;
+            text-decoration: none;
+            white-space: normal;
+        }
+
+        .notification-scroll li:hover {
+            background: rgba(0,0,0,0.02);
+        }
+
+    .notification-scroll .date {
+        font-size: 0.85em;
+        display: block;
+        line-height: 1.5em;
+    }
+
+    .notification-scroll .dismiss {
+        padding: 1.2em 1.2em;
+        float: right;
+        line-height: 1em;
+        display: inline-block;
+        opacity: 0.5;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        .notification-scroll .dismiss:hover {
+            opacity: 1;
+        }
+
+        .notification-scroll .dismiss:before {
+            content: '\f5ad';
+            font-family: "Material Design Icons";
+            font-size: 16px;
+            color: rgba(0,0,0,0.5);
+            line-height: 1em;
+        }
+
+    .notification-scroll .time {
+        font-size: 0.85em;
+        display: block;
+        float: right;
+        line-height: 1.5em;
+    }
+
+    .notification-scroll p {
+        line-height: 1.3em;
+    }
+
+    .notification-scroll h4 {
+        font-size: 1.2em;
+        margin: 0.1em 0;
+        position: relative;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+
+    .notification-scroll .new h4:before {
+        content: "â€¢";
+        display: inline-block;
+        position: absolute;
+        left: -18px;
+        font-size: 1.6em;
+        margin-right: 1em;
+    }
+
+.modal-notification .footer {
+    line-height: 66px;
+    text-align: center;
+}
+
+    .modal-notification .footer a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.95em;
+    }
+
+        .modal-notification .footer a:hover {
+            text-decoration: none;
+        }
+/*Scroll bar notification center*/
+.notification-scroll ::-webkit-scrollbar {
+    width: 4px;
+}
+
+.notification-scroll ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.notification-scroll ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/************************************************************************************
+Media Queries
+************************************************************************************/
+/* System colors*/
+/*Right menu background*/
+.nav-menu.right {
+    background: #8c8c8c;
+}
+/*Main menu background*/
+.nav-menu.left {
+    background: #537523;
+}
+
+/*Menu active item - main menu*/
+.nav-menu.left a.active {
+    background-color: #4285f4;
+}
+/*Menu active item - right menu*/
+.nav-menu.right a.active {
+    background-color: #f2a900;
+}
+/*Notification Center*/
+/*Active Tab*/
+.modal-notification .heading .active a {
+    color: #00457c;
+}
+
+.modal-notification .heading .active a {
+    border-bottom: 3px solid #00457c;
+}
+/*Hover Link*/
+.modal-notification .footer a:hover {
+    color: #00457c;
+}
+/*Bell Active Color*/
+#notification-control:checked + label:before {
+    color: #00457c;
+}
+/*New item*/
+.notification-scroll .new h4 {
+    color: #feba4d;
+}
+/*Welcome Name*/
+.welcome h4 {
+    color: #00457c;
+}
+/*Featured Cards*/
+.featured-cards .icon {
+    background: #00457c;
+}
+/*Line*/
+.featured-cards h4 {
+    border-bottom: 2px solid #feba4d;
+}
+/*Buttons*/
+.btn-red {
+    background-color: #c9223d;
+}
+
+.btn-blue {
+    background-color: #00457c;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: rgba(0,0,0,0.4) !important;
+}
+
+    .btn-white:hover {
+        color: rgba(0,0,0,0.6) !important;
+    }
+
+.btn-yellow {
+    background-color: #feba4d;
+}
+/*Title Line*/
+.title-line {
+    color: #00457c;
+}
+
+    .title-line:after {
+        border-bottom: 2px solid #feba4d;
+    }
+/*Chart Buttons*/
+.chart-bts a.active {
+    background: #00457c;
+    color: #fff;
+}
